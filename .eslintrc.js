@@ -1,9 +1,15 @@
 module.exports = {
+    "plugins": [
+      "css-modules"
+    ],
     "env": {
         "es6": true,
         "node": true
     },
-    "extends": "eslint:recommended",
+    "extends": [
+      "eslint:recommended",
+      "plugin:css-modules/recommended"
+    ],
     "parserOptions": {
       "ecmaVersion": 8
     },
