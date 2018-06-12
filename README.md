@@ -1,6 +1,24 @@
 # smm
 Social Media Manager
 
+## scripts
+
+### start
+
+Starts the server in dev mode.
+
+### test
+
+Tests the code using Jest
+
+### lint
+
+Lints the code for coding errors
+
+### seed
+
+Seeds the databases for dev
+
 ## lib
 
 Contains all the code to perform stuff.
