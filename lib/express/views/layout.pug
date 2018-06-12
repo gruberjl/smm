@@ -1,0 +1,13 @@
+block variables  
+doctype html
+html(amp="" lang="en")
+  head
+    - let layoutTitle = title ? `${title} | GitBit` : 'GitBit | Office 365 Tips to Improve Productivity'
+    meta(charset="utf-8")
+    title= layoutTitle
+    meta(name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1")
+    meta(property='fb:app_id', content='125424108093912')
+    style
+      include ../assets/styles.css
+  body
+    block content
