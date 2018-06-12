@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "jest",
-    "lint": "./node_modules/.bin/eslint lib/**"
+    "lint": "./node_modules/.bin/eslint lib/**",
+    "seed": "node lib/db/seed.js"
   },
   "repository": {
     "type": "git",
