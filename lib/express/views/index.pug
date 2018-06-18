@@ -1,4 +1,6 @@
 extends layout.pug
 
 block content
-  a(href='/auth/twitter') Twitter Login
+  script(src="/socket.io/socket.io.js")
+  script
+      include ../assets/socket-io.js
