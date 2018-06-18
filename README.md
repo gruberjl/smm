@@ -1,6 +1,14 @@
 # smm
 Social Media Manager
 
+## secret.js
+
+```JavaScript
+module.exports = {
+  facebookAppSecret: ''
+}
+```
+
 ## scripts
 
 ### start
