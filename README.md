@@ -5,7 +5,9 @@ Social Media Manager
 
 ```JavaScript
 module.exports = {
-  facebookAppSecret: ''
+  facebookAppSecret: '',
+  twitterApiKey: '',
+  twitterApiSecret: ''
 }
 ```
 
