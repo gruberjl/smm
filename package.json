@@ -21,8 +21,6 @@
   "homepage": "https://github.com/gruberjl/smm#readme",
   "dependencies": {
     "express": "^4.16.3",
-    "leveldown": "^4.0.1",
-    "levelup": "^3.0.1",
     "pug": "^2.0.3",
     "socket.io": "^2.1.1",
     "twitter": "^1.7.1"

@@ -57,6 +57,7 @@ Contains code and data for the database.
 * Connectors - Accounts that link to social media (for example gruberjl's twitter account)
 * Channels - A place where you can view all the data that comes from the connectors
 * Workflows - A way to get information from the connectors, filter by these like hashtags, then output to a channel
+* streams - a connection from a social media platform that connects to the active users
 
 #### data
 
