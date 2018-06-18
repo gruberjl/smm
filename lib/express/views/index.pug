@@ -1,12 +1,10 @@
 extends layout.pug
 
-block head
-  script(src="/socket.io/socket.io.js")
-  script
-    include ../assets/socket-io.js
-
 block content
   include header.pug
   #app
     include nav.pug
     #messages-container
+  script(src="/socket.io/socket.io.js")
+  script
+    include ../assets/app.js

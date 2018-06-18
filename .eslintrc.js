@@ -17,7 +17,11 @@ module.exports = {
       "test": true,
       "expect": true,
       "describe": true,
-      "beforeAll": true
+      "beforeAll": true,
+      "HTMLElement": true,
+      "io": true,
+      "window": true,
+      "document": true
     },
     "rules": {
         "no-empty": 0,
