@@ -51,6 +51,13 @@ The pug views that will be shared with the world
 
 Contains code and data for the database.
 
+**Database Structure**
+* Users - List of all users
+* Workspace - tenants that link users to everything
+* Connectors - Accounts that link to social media (for example gruberjl's twitter account)
+* Channels - A place where you can view all the data that comes from the connectors
+* Workflows - A way to get information from the connectors, filter by these like hashtags, then output to a channel
+
 #### data
 
 Contains the data code.
