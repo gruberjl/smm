@@ -1,4 +1,5 @@
 const React = require('react')
+const {api} = require('../../lib/index.js')
 const {ChannelEditCard} = require('./edit-card.js')
 
 class ChannelsEdit extends React.Component {
@@ -19,7 +20,10 @@ class ChannelsEdit extends React.Component {
   }
 
   saveChannel() {
+    // api.save('channel', this.state.channel, this.props.workspace.id)
     console.log('saving channel')
+    console.dir(this.state.channel)
+    console.dir(this.props.workspace.id)
   }
 
   render() {
