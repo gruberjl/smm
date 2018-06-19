@@ -43,7 +43,7 @@ class App extends React.Component {
         <Header/>
         <div id="app-body">
           <LeftNav channels={this.state.workspace.channels}/>
-          <Main locationHash={this.state.locationHash} messages={this.state.messages}/>
+          <Main locationHash={this.state.locationHash} messages={this.state.messages} workspace={this.state.workspace}/>
         </div>
       </div>
     )

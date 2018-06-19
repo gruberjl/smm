@@ -9,7 +9,7 @@ const filterMessagesByChannel = (channel, messages) => {
 }
 
 const MessageCard = ({message}) => (
-  <div className="message-card stack margins padding">
+  <div className="card message-card stack margins padding">
     <header className="message-card-header">
       <div className="message-from-image-container">
         <img className="message-from-image" src={message.event.from.image} />
