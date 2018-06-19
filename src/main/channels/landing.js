@@ -31,7 +31,18 @@ const ChannelsLanding = ({workspace}) => {
     (channel) => <Channel channel={channel} key={channel.id}/>
   )
 
-  return <main id="channels-landing-container">{channelElements}</main>
+  return <main id="channels-landing-container">
+    <div className="space-between align-center side-margins">
+      <h1>Channels</h1>
+      <div>
+        <a href="#channels/new" className="space-around align-center no-style">
+          <img src="/assets/fa/advanced-options/raw-svg/solid/plus.svg" width="28px" height="28px"/>
+          <span className="side-padding">New Channel</span>
+        </a>
+      </div>
+    </div>
+    {channelElements}
+  </main>
 }
 
 module.exports = {ChannelsLanding}

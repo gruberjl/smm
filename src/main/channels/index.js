@@ -5,7 +5,7 @@ const {ChannelsEdit} = require('./edit.js')
 const Channels = (props) => {
   const arrLocation = props.locationHash.split('/')
 
-  if (arrLocation.length > 1 && arrLocation[1] == 'edit') {
+  if (arrLocation.length > 1 && (arrLocation[1] == 'edit' || arrLocation[1] == 'new')) {
     return <ChannelsEdit {...props}/>
   }
 
