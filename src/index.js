@@ -20,6 +20,14 @@ class App extends React.Component {
       this.setState((prevState) => ({ messages: [].concat(prevState.messages, [msg]) }))
     })
 
+    this.state.socket.on('messages', (response) => {
+      console.log('messages received')
+      const workflow = response.workflow
+      const messages = response.events.map((event) => Object.assign({workflow}, event))
+      console.log(messages)
+      this.setState((prevState) => ({ messages: [].concat(prevState.messages, messages) }))
+    })
+
     this.state.socket.on('workspace', (workspace) => {
       this.setState({workspace})
     })
