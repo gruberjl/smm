@@ -1,6 +1,7 @@
 module.exports = {
     "plugins": [
-      "css-modules"
+      "css-modules",
+      "react"
     ],
     "env": {
         "es6": true,
@@ -8,10 +9,14 @@ module.exports = {
     },
     "extends": [
       "eslint:recommended",
-      "plugin:css-modules/recommended"
+      "plugin:css-modules/recommended",
+      "plugin:react/recommended"
     ],
     "parserOptions": {
-      "ecmaVersion": 8
+      "ecmaVersion": 8,
+      "ecmaFeatures": {
+        "jsx": true
+      }
     },
     "globals": {
       "test": true,
