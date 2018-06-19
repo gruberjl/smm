@@ -3,7 +3,7 @@ const React = require('react')
 class Workflow extends React.Component {
   editFlow(id) {
     return () => {
-      window.history.pushState(null, null, `#workflows/edit/${id}`)
+      window.location = `#workflows/edit/${id}`
     }
   }
 

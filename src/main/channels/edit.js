@@ -1,19 +1,41 @@
 const React = require('react')
 const {ChannelEditCard} = require('./edit-card.js')
 
-const ChannelsEdit = (props) => {
-  let channel = {}
+class ChannelsEdit extends React.Component {
+  constructor(props) {
+    super(props)
 
-  const arrLocation = props.locationHash.split('/')
-  if (arrLocation[1] == 'new') {
-    channel = {name: '', id: ''}
-  } else {
-    channel = props.workspace.channels[arrLocation[2]]
+    const arrLocation = this.props.locationHash.split('/')
+    const isNew = arrLocation[1] == 'new'
+    let channel = {}
+    if (!isNew)
+      channel = Object.assign({}, this.props.workspace.channels[arrLocation[2]], {id: arrLocation[2]})
+
+    this.state = {isNew, channel, initialChannel: Object.assign({}, channel)}
   }
 
-  return <main id="channels-edit-container">
-    <ChannelEditCard {...props} channel={channel}/>
-  </main>
+  channelChanged(channel) {
+    this.setState({channel})
+  }
+
+  saveChannel() {
+    console.log('saving channel')
+  }
+
+  render() {
+    const channel = this.state.channel
+    const headerText = this.state.isNew ? 'Create New Channel' : `Edit Channel: ${this.state.initialChannel.name}`
+
+    return <main id="channels-edit-container">
+      <header className="side-margins">
+        <h1>{headerText}</h1>
+      </header>
+      <ChannelEditCard {...this.props} channel={channel} onChange={this.channelChanged.bind(this)}/>
+      <footer>
+        <button onClick={this.saveChannel.bind(this)}>Save</button>
+      </footer>
+    </main>
+  }
 }
 
 module.exports = {ChannelsEdit}

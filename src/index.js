@@ -3,13 +3,13 @@ const ReactDOM = require('react-dom')
 const {Header} = require('./header.js')
 const {LeftNav} = require('./left-nav.js')
 const {Main} = require('./main/index.js')
+const {LoadingPage} = require('./loading.js')
 
 class App extends React.Component {
   constructor() {
     super()
     this.state = {
       messages: [],
-      workspace: {connectors:{}, channels:{}, workflows:{}},
       socket: io(),
       locationHash: window.location.hash.substr(1)
     }
@@ -38,6 +38,10 @@ class App extends React.Component {
   }
 
   render() {
+    if (!this.state.workspace) {
+      return <LoadingPage />
+    }
+
     return (
       <div id="app-root">
         <Header/>

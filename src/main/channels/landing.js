@@ -3,7 +3,7 @@ const React = require('react')
 class Channel extends React.Component {
   editChannel(id) {
     return () => {
-      window.history.pushState(null, null, `#channels/edit/${id}`)
+      window.location = `#channels/edit/${id}`
     }
   }
 

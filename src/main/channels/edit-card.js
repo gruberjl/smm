@@ -1,26 +1,21 @@
 const React = require('react')
 
 class ChannelEditCard extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = Object.assign({}, {channel: props.channel})
-  }
-
   handleChange(event) {
-    const channel = Object.assign({}, this.state.channel)
+    const channel = Object.assign({}, this.props.channel)
     channel[event.target.name] = event.target.value
-    this.setState({channel})
+    this.props.onChange(channel)
   }
 
   render() {
-    const channel = this.state.channel
+    const channel = this.props.channel
     return <div id="channel-edit-card" className="card margins padding">
       <div>
         <label>ID: </label>
         <span>{channel.id}</span>
       </div>
       <div>
-        <input type="text" placeholder="Channel Name" value={channel.name} onChange={this.handleChange.bind(this)} name="name"/>
+        <input type="text" placeholder="Channel Name" value={channel.name || ''} onChange={this.handleChange.bind(this)} name="name"/>
       </div>
       {JSON.stringify(channel)}
     </div>
