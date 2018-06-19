@@ -10,9 +10,12 @@ const filterMessagesByChannel = (channel, messages) => {
 
 const MessageCard = ({message}) => (
   <div className="message-card stack margins padding">
-    <header className="message-card-header columnar">
-      <span className="message-from-display-name fw600">{message.event.from.displayName}</span>
-      <span className="message-from-account light">{message.event.from.account}</span>
+    <header className="message-card-header">
+      <div className="message-from-image-container">
+        <img className="message-from-image" src={message.event.from.image} />
+        <img className="message-from-platform" src="/assets/fa/advanced-options/raw-svg/brands/twitter.svg"/>
+      </div>
+      <span className="message-from-display-name fw600 side-margins">{message.event.from.displayName}</span>
     </header>
     <div className="message-text">{message.event.message}</div>
     <footer></footer>

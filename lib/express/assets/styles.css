@@ -209,7 +209,7 @@ ul.scatter li {
 }
 
 #app-body {
-  min-height: calc(100vh - 61px);
+  height: calc(100vh - 61px);
   display: flex;
   align-items: stretch;
 }
@@ -222,11 +222,13 @@ aside#left-nav {
   width: 300px;
   border-right: 1px solid #666;
   font-size: 16px;
+  overflow-y: auto;
 }
 
 main#messages-container {
   flex: 1;
   background: rgba(1,1,1,.03);
+  overflow-y: scroll;
 }
 
 .message-card {
@@ -237,6 +239,25 @@ main#messages-container {
 
 .message-card-header {
   line-height: 1
+}
+
+.message-from-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.message-from-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.message-from-platform {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .message-display-name {
