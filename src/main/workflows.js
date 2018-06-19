@@ -1,45 +1,15 @@
 const React = require('react')
+const {WorkflowsLanding} = require('./workflows.landing.js')
+const {WorkflowsEdit} = require('./workflows.edit.js')
 
-class Workflow extends React.Component {
-  editFlow(id) {
-    return () => {
-      window.history.pushState(null, null, `#workflows/edit/${id}`)
-    }
+const Workflows = (props) => {
+  const arrLocation = props.locationHash.split('/')
+
+  if (arrLocation.length > 1 && arrLocation[1] == 'edit') {
+    return <WorkflowsEdit {...props}/>
   }
 
-  render() {
-    const workflow = this.props.workflow
-    return (<div className="card stack margins padding link" onClick={this.editFlow(workflow.id)}>
-      <div>
-        <label>Id: </label>
-        <span>{workflow.id}</span>
-      </div>
-      <div>
-        <label>Connector: </label>
-        <span>{workflow.connector}</span>
-      </div>
-      <div>
-        <label>Action: </label>
-        <span>{workflow.action}</span>
-      </div>
-      <div>
-        <label>Filters: </label>
-        <span>{JSON.stringify(workflow.filters)}</span>
-      </div>
-    </div>)
-  }
-}
-
-const Workflows = ({workspace}) => {
-  const workflows = Object.keys(workspace.workflows).map(
-    (key) => Object.assign({}, workspace.workflows[key], {id:key})
-  )
-
-  const workflowElements = workflows.map(
-    (workflow) => <Workflow workflow={workflow} key={workflow.id}/>
-  )
-
-  return <main id="workflows-container">{workflowElements}</main>
+  return <WorkflowsLanding {...props}/>
 }
 
 module.exports = {Workflows}
