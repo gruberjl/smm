@@ -192,10 +192,14 @@ ul.scatter li {
   padding-bottom: 12px;
 }
 
-#app {
+#app-body {
   min-height: calc(100vh - 61px);
   display: flex;
   align-items: stretch;
+}
+
+#app-root {
+  width:100%;
 }
 
 aside#left-nav {
@@ -212,7 +216,7 @@ main#messages-container {
 }
 
 .message-card-header {
-  
+
 }
 
 .message-display-name {
