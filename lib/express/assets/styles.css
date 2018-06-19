@@ -36,7 +36,7 @@
 
 html {
   font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-size: 14px;
   line-height: 1.5;
 }
 
@@ -106,18 +106,21 @@ ul.scatter li {
   font-weight: 300;
 }
 
+.fw600 {
+  font-weight: 600;
+}
+
 .w300 {
   width: 300px;
+}
+
+.margins {
+  margin: 12px;
 }
 
 .side-margins {
   margin-left: 12px;
   margin-right: 12px;
-}
-
-.side-padding {
-  padding-left: 12px;
-  padding-right: 12px;
 }
 
 .stack-margins2 {
@@ -131,6 +134,19 @@ ul.scatter li {
 
 .margin-auto {
   margin: auto;
+}
+
+.padding {
+  padding: 12px;
+}
+
+.side-padding {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.left-padding {
+  padding-left: 12px;
 }
 
 .hide-overflow {
@@ -205,18 +221,22 @@ ul.scatter li {
 aside#left-nav {
   width: 300px;
   border-right: 1px solid #666;
+  font-size: 16px;
 }
 
 main#messages-container {
   flex: 1;
+  background: rgba(1,1,1,.03);
 }
 
 .message-card {
-
+  background: white;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 4px;
 }
 
 .message-card-header {
-
+  line-height: 1
 }
 
 .message-display-name {

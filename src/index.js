@@ -10,16 +10,23 @@ class App extends React.Component {
     this.state = {
       messages: [],
       workspace: {connectors:{}, channels:{}, workflows:{}},
-      socket: io()
+      socket: io(),
+      locationHash: window.location.hash.substr(1)
     }
 
     this.state.socket.on('message', (msg) => {
+      console.log('message received')
+      console.dir(msg)
       this.setState((prevState) => ({ messages: [].concat(prevState.messages, [msg]) }))
     })
 
     this.state.socket.on('workspace', (workspace) => {
       this.setState({workspace})
     })
+
+    window.onhashchange = () => {
+      this.setState({locationHash: window.location.hash.substr(1)})
+    }
   }
 
   render() {
@@ -28,7 +35,7 @@ class App extends React.Component {
         <Header/>
         <div id="app-body">
           <LeftNav channels={this.state.workspace.channels}/>
-          <Main/>
+          <Main locationHash={this.state.locationHash} messages={this.state.messages}/>
         </div>
       </div>
     )

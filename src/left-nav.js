@@ -11,9 +11,9 @@ class LeftNav extends React.Component {
     ))
 
     return (
-      <aside id="left-nav" className="no-margin">
+      <aside id="left-nav" className="no-margin padding">
         <h4 className="light no-margin">channels</h4>
-        <div id="channels-container">{channels}</div>
+        <div id="channels-container left-padding">{channels}</div>
       </aside>
     )
   }
