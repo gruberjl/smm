@@ -20,10 +20,7 @@ class ChannelsEdit extends React.Component {
   }
 
   saveChannel() {
-    // api.save('channel', this.state.channel, this.props.workspace.id)
-    console.log('saving channel')
-    console.dir(this.state.channel)
-    console.dir(this.props.workspace.id)
+    api.save('channel', this.state.channel, this.props.workspace.id)
   }
 
   render() {
