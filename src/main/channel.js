@@ -37,7 +37,7 @@ const MessageCard = ({message}) => (
   </div>
 )
 
-class Main extends React.Component {
+class Channel extends React.Component {
   render() {
     let domMessages = []
     if (this.props.locationHash.split('/')[0] == 'channel') {
@@ -56,4 +56,4 @@ class Main extends React.Component {
   }
 }
 
-module.exports = {Main}
+module.exports = {Channel}

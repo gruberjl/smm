@@ -2,7 +2,7 @@ const React = require('react')
 const ReactDOM = require('react-dom')
 const {Header} = require('./header.js')
 const {LeftNav} = require('./left-nav.js')
-const {Main} = require('./main.js')
+const {Main} = require('./main/index.js')
 
 class App extends React.Component {
   constructor() {

@@ -226,10 +226,14 @@ aside#left-nav {
   overflow-y: auto;
 }
 
-main#messages-container {
+main {
   flex: 1;
-  background: rgba(1,1,1,.03);
   overflow-y: scroll;
+  background: rgba(1,1,1,.03);
+}
+
+main#messages-container {
+
 }
 
 .message-card {
