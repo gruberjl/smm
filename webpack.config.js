@@ -1,7 +1,7 @@
 const {join} = require('path')
 
 module.exports = {
-  entry: './src/index.jsx',
+  entry: './src/index.js',
   mode: 'development',
   output: {
     filename: 'bundle.js',
