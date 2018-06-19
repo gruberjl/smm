@@ -156,6 +156,7 @@ ul.scatter li {
 .align-center {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .space-between {
@@ -270,4 +271,21 @@ main#messages-container {
 
 .message-text {
 
+}
+
+.message-action-container {
+  margin-top: 12px;
+}
+
+.message-action {
+  height: 40px;
+  background: white;
+  border: none;
+  line-height: 15px;
+  font-size: 15px;
+}
+
+.message-action-icon {
+  height: 15px;
+  margin-right: 8px;
 }

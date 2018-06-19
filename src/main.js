@@ -18,7 +18,22 @@ const MessageCard = ({message}) => (
       <span className="message-from-display-name fw600 side-margins">{message.event.from.displayName}</span>
     </header>
     <div className="message-text">{message.event.message}</div>
-    <footer></footer>
+    <footer>
+      <div className="message-action-container">
+        <button className="message-action">
+          <img className="message-action-icon" src="/assets/fa/advanced-options/raw-svg/solid/thumbs-up.svg"/>
+          <span className="message-action-text">Like</span>
+        </button>
+        <button className="message-action side-margins">
+          <img className="message-action-icon" src="/assets/fa/advanced-options/raw-svg/solid/comment.svg"/>
+          <span className="message-action-text">Comment</span>
+        </button>
+        <button className="message-action">
+          <img className="message-action-icon" src="/assets/fa/advanced-options/raw-svg/solid/share.svg"/>
+          <span className="message-action-text">Share</span>
+        </button>
+      </div>
+    </footer>
   </div>
 )
 
