@@ -32,7 +32,7 @@ class Workflow extends React.Component {
 
 const WorkflowsLanding = ({workspace}) => {
   const workflows = Object.keys(workspace.workflows).map(
-    (key) => Object.assign({}, workspace.workflows[key], {id:key})
+    (key) => Object.assign({}, workspace.workflows[key])
   )
 
   const workflowElements = workflows.map(

@@ -10,7 +10,7 @@ class ChannelsEdit extends React.Component {
     const isNew = arrLocation[1] == 'new'
     let channel = {}
     if (!isNew)
-      channel = Object.assign({}, this.props.workspace.channels[arrLocation[2]], {id: arrLocation[2]})
+      channel = Object.assign({}, this.props.workspace.channels[arrLocation[2]])
 
     this.state = {isNew, channel, initialChannel: Object.assign({}, channel)}
   }

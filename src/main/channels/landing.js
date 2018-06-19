@@ -24,7 +24,7 @@ class Channel extends React.Component {
 
 const ChannelsLanding = ({workspace}) => {
   const channels = Object.keys(workspace.channels).map(
-    (key) => Object.assign({}, workspace.channels[key], {id:key})
+    (key) => Object.assign({}, workspace.channels[key])
   )
 
   const channelElements = channels.map(
