@@ -1,9 +1,9 @@
 const axios = require('axios')
 
-const save = (db, data, workspaceId) => axios({
+const save = (table, data, workspaceId) => axios({
   method: 'post',
   url: '/api/v1/save',
-  data: {db, data, workspaceId}
+  data: {table, data, workspaceId}
 })
 
 
