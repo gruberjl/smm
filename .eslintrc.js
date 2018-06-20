@@ -26,7 +26,8 @@ module.exports = {
       "HTMLElement": true,
       "io": true,
       "window": true,
-      "document": true
+      "document": true,
+      "beforeEach": true
     },
     "rules": {
         "react/prop-types": 0,
