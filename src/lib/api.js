@@ -1,10 +1,10 @@
 const axios = require('axios')
 
-const save = (collection, data, workspaceId) => axios({
+const update = (collection, data, workspaceId) => axios({
   method: 'post',
-  url: '/api/v1/save',
-  data: {collection, data, workspaceId}
+  url: '/api/v1/update',
+  data: {collection, data, query:{_id: workspaceId}}
 })
 
 
-module.exports = {save}
+module.exports = {update}
