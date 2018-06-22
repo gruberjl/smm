@@ -4,7 +4,7 @@
   "description": "Social Media Manager",
   "main": "index.js",
   "scripts": {
-    "start": "concurrently \"node index.js\" \"webpack --watch\"",
+    "start": "concurrently \"set NODE_ENV=development && node index.js\" \"webpack --watch\"",
     "test": "set NODE_ENV=testing && jest",
     "lint": "./node_modules/.bin/eslint lib/**",
     "seed": "node lib/db/seed.js",
