@@ -7,7 +7,11 @@ Social Media Manager
 module.exports = {
   facebookAppSecret: '',
   twitterApiKey: '',
-  twitterApiSecret: ''
+  twitterApiSecret: '',
+  twitterAccessToken: '',
+  twitterTokenSecret: '',
+  redisServerIP: '',
+  redisPort: 6379
 }
 ```
 
@@ -58,6 +62,20 @@ Contains code and data for the database.
 * Channels - A place where you can view all the data that comes from the connectors
 * Workflows - A way to get information from the connectors, filter by these like hashtags, then output to a channel
 * streams - a connection from a social media platform that connects to the active users
+
+#### Redis
+
+To setup a dev environment you'll need to install docker then run:
+
+`docker run -p 6379:6379 --name redis02 -d redis`
+
+run the following PowerShell command to determine the docker ip:
+
+`Get-NetIPAddress | ft IPAddress, InterfaceAlias`
+
+It should be labeled something like `vEthernet (DockerNAT)`
+
+Once you have the IP address update
 
 #### data
 
