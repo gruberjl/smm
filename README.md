@@ -67,7 +67,7 @@ Contains code and data for the database.
 
 To setup a dev environment you'll need to install docker then run:
 
-`docker run -p 6379:6379 --name redis02 -d redis`
+`docker run -p 6379:6379 --name redis01 -d redis`
 
 run the following PowerShell command to determine the docker ip:
 

@@ -30,7 +30,8 @@ module.exports = {
       "beforeEach": true,
       "afterAll": true,
       "afterEach": true,
-      "jest": true
+      "jest": true,
+      "WebSocket": true
     },
     "rules": {
         "react/prop-types": 0,
