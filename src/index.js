@@ -3,7 +3,6 @@ const ReactDOM = require('react-dom')
 const {Header} = require('./header.js')
 const {LeftNav} = require('./left-nav.js')
 const {Main} = require('./main/index.js')
-const {LoadingPage} = require('./loading.js')
 
 class App extends React.Component {
   constructor() {
@@ -11,7 +10,8 @@ class App extends React.Component {
     this.state = {
       messages: [],
       socket: io(),
-      locationHash: window.location.hash.substr(1)
+      locationHash: window.location.hash.substr(1),
+      workspace: window.intitalWorkspace
     }
 
     this.state.socket.on('message', (msg) => {
@@ -38,10 +38,6 @@ class App extends React.Component {
   }
 
   render() {
-    if (!this.state.workspace) {
-      return <LoadingPage />
-    }
-
     return (
       <div id="app-root">
         <Header/>

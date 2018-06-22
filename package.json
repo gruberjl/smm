@@ -7,7 +7,7 @@
     "start": "concurrently \"set NODE_ENV=development && node index.js\" \"webpack --watch\"",
     "test": "set NODE_ENV=testing && jest",
     "lint": "./node_modules/.bin/eslint lib/**",
-    "seed": "node lib/db/seed.js",
+    "seed": "node lib/db/seed.dev.js",
     "bundle": "webpack"
   },
   "repository": {
