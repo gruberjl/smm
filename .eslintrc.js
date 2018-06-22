@@ -29,7 +29,8 @@ module.exports = {
       "document": true,
       "beforeEach": true,
       "afterAll": true,
-      "afterEach": true
+      "afterEach": true,
+      "jest": true
     },
     "rules": {
         "react/prop-types": 0,

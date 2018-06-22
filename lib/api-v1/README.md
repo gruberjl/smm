@@ -1,6 +1,6 @@
 # API
 
-## get
+## get (/v1/workspaces/:id')
 
 Get a workspace
 
@@ -9,7 +9,7 @@ Get a workspace
 * API get's workspace
 * API returns workspace
 
-## update
+## update (/v1/workspaces/:id/update)
 
 Update a workspace
 
