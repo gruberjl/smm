@@ -3,7 +3,8 @@ window.listeners = []
 
 window.ws.onopen = function () {
   console.log('websocket is connected ...')
-  window.ws.send('connected')
+  const data = {action:'AUTHENTICATE', workspaceId: window.intitalWorkspace.id}
+  window.ws.send(JSON.stringify(data))
 }
 
 window.ws.onmessage = function (ev) {
