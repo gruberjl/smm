@@ -17,6 +17,13 @@ const saveItem = (workspaceId, item, table) => {
   return update(workspaceId, data)
 }
 
-const workspaces = {update, saveItem}
+const deleteItem = (workspaceId, id, table) => {
+  const data = {}
+  data[table] = {}
+  data[table][id] = null
+  return update(workspaceId, data)
+}
+
+const workspaces = {update, saveItem, deleteItem}
 
 module.exports = {workspaces}

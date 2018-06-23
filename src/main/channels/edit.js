@@ -23,6 +23,10 @@ class ChannelsEdit extends React.Component {
     api.workspaces.saveItem(this.props.workspace.id, this.state.channel, 'channels')
   }
 
+  deleteChannel() {
+    api.workspaces.deleteItem(this.props.workspace.id, this.state.channel.id, 'channels')
+  }
+
   render() {
     const channel = this.state.channel
     const headerText = this.state.isNew ? 'Create New Channel' : `Edit Channel: ${this.state.initialChannel.name}`
@@ -32,8 +36,13 @@ class ChannelsEdit extends React.Component {
         <h1>{headerText}</h1>
       </header>
       <ChannelEditCard {...this.props} channel={channel} onChange={this.channelChanged.bind(this)}/>
-      <footer>
-        <button onClick={this.saveChannel.bind(this)}>Save</button>
+      <footer className="space-between side-margins">
+        <div>
+          <button onClick={this.deleteChannel.bind(this)}>Delete</button>
+        </div>
+        <div>
+          <button onClick={this.saveChannel.bind(this)}>Save</button>
+        </div>
       </footer>
     </main>
   }

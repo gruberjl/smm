@@ -1,7 +1,7 @@
 const React = require('react')
 
 const ChannelNavLink = ({name}) => (
-  <a href={`#channel/${name}`}>{name}</a>
+  <div><a href={`#channel/${name}`}>{name}</a></div>
 )
 
 class LeftNav extends React.Component {
