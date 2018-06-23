@@ -15,28 +15,10 @@ class App extends React.Component {
       workspace: window.intitalWorkspace
     }
 
-    this.state.ws.on('WORKSPACE_UPDATE', (data) => {
+    this.state.ws.on('WORKSPACE_UPDATED', ({workspace}) => {
       console.log('workspace updated')
-      // this.setState(data.workspace)
+      this.setState({workspace})
     })
-
-    // this.state.socket.on('message', (msg) => {
-    //   console.log('message received')
-    //   console.dir(msg)
-    //   this.setState((prevState) => ({ messages: [].concat(prevState.messages, [msg]) }))
-    // })
-    //
-    // this.state.socket.on('messages', (response) => {
-    //   console.log('messages received')
-    //   const workflow = response.workflow
-    //   const messages = response.events.map((event) => Object.assign({workflow}, event))
-    //   console.log(messages)
-    //   this.setState((prevState) => ({ messages: [].concat(prevState.messages, messages) }))
-    // })
-    //
-    // this.state.socket.on('workspace', (workspace) => {
-    //   this.setState({workspace})
-    // })
 
     window.onhashchange = () => {
       this.setState({locationHash: window.location.hash.substr(1)})
