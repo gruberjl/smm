@@ -1,5 +1,18 @@
 # Database
 
+## Connector
+
+```JavaScript
+const connector = {
+  id: 'uuid',
+  name: 'Name of connector to be used in app.',
+  account: 'uuid pointing to token + secret',
+  provider: 'oneOf: twitter, facebook, linkedin, etc.',
+  accountName: 'name of account at provider (@gruberjl)',
+  image: 'url to image for profile'
+}
+```
+
 ## Things I need to be able to do
 
 ## Create Workspace
