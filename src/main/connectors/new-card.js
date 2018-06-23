@@ -11,7 +11,7 @@ class ConnectorNewCard extends React.Component {
     const connector = this.props.connector
     return <div id="connector-new-card" className="card margins padding">
       <div><h2>Platform</h2></div>
-      <div><a href="twitter">Twitter</a></div>
+      <div><a href="/auth/twitter">Twitter</a></div>
       {JSON.stringify(connector)}
     </div>
   }
