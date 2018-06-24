@@ -7,11 +7,15 @@ class ConnectorNewCard extends React.Component {
     this.props.onChange(connector)
   }
 
+  auth() {
+    window.open('/auth/twitter', 'newwindow', 'width=300,height=250')
+  }
+
   render() {
     const connector = this.props.connector
     return <div id="connector-new-card" className="card margins padding">
       <div><h2>Platform</h2></div>
-      <div><a href="/auth/twitter">Twitter</a></div>
+      <div><button onClick={this.auth.bind(this)}>Twitter</button></div>
       {JSON.stringify(connector)}
     </div>
   }
