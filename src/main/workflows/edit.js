@@ -3,6 +3,7 @@ const {api} = require('../../lib/index.js')
 const {WorkflowEditCard} = require('./edit-card.js')
 const {WorkflowEditConnectorCard} = require('./edit-connector-card.js')
 const {WorkflowEditFiltersCard} = require('./edit-filters-card.js')
+const {WorkflowEditChannelCard} = require('./edit-channel-card.js')
 
 class WorkflowsEdit extends React.Component {
   constructor(props) {
@@ -40,6 +41,7 @@ class WorkflowsEdit extends React.Component {
       <WorkflowEditCard {...this.props} workflow={workflow} onChange={this.workflowChanged.bind(this)}/>
       <WorkflowEditConnectorCard {...this.props} workflow={workflow} onChange={this.workflowChanged.bind(this)}/>
       <WorkflowEditFiltersCard {...this.props} workflow={workflow} onChange={this.workflowChanged.bind(this)}/>
+      <WorkflowEditChannelCard {...this.props} workflow={workflow} onChange={this.workflowChanged.bind(this)}/>
       <footer className="space-between side-margins">
         <div>
           <button onClick={this.deleteWorkflow.bind(this)}>Delete</button>
