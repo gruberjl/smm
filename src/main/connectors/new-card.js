@@ -26,8 +26,9 @@ class ConnectorNewCard extends React.Component {
   }
 
   auth() {
+    const url = `/auth/twitter?workspaceId=${this.props.workspace.id}&connectorId=${this.state.id}`
     this.setState({
-      authWindow: window.open(`/auth/twitter?connectorId=${this.state.id}`, 'newwindow', 'width=500,height=500')
+      authWindow: window.open(url, 'newwindow', 'width=500,height=500')
     })
   }
 

@@ -1,6 +1,8 @@
 const React = require('react')
 const {api} = require('../../lib/index.js')
 const {WorkflowEditCard} = require('./edit-card.js')
+const {WorkflowEditConnectorCard} = require('./edit-connector-card.js')
+const {WorkflowEditFiltersCard} = require('./edit-filters-card.js')
 
 class WorkflowsEdit extends React.Component {
   constructor(props) {
@@ -8,7 +10,7 @@ class WorkflowsEdit extends React.Component {
 
     const arrLocation = this.props.locationHash.split('/')
     const isNew = arrLocation[1] == 'new'
-    let workflow = {}
+    let workflow = {filters:{}}
     if (!isNew)
       workflow = Object.assign({}, this.props.workspace.workflows[arrLocation[2]])
 
@@ -36,6 +38,8 @@ class WorkflowsEdit extends React.Component {
         <h1>{headerText}</h1>
       </header>
       <WorkflowEditCard {...this.props} workflow={workflow} onChange={this.workflowChanged.bind(this)}/>
+      <WorkflowEditConnectorCard {...this.props} workflow={workflow} onChange={this.workflowChanged.bind(this)}/>
+      <WorkflowEditFiltersCard {...this.props} workflow={workflow} onChange={this.workflowChanged.bind(this)}/>
       <footer className="space-between side-margins">
         <div>
           <button onClick={this.deleteWorkflow.bind(this)}>Delete</button>
