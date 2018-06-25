@@ -1,7 +1,7 @@
 const React = require('react')
 
 class Workflow extends React.Component {
-  editFlow(id) {
+  editWorkflow(id) {
     return () => {
       window.location = `#workflows/edit/${id}`
     }
@@ -9,22 +9,14 @@ class Workflow extends React.Component {
 
   render() {
     const workflow = this.props.workflow
-    return (<div className="card stack margins padding link" onClick={this.editFlow(workflow.id)}>
+    return (<div className="card stack margins padding link" onClick={this.editWorkflow(workflow.id)}>
       <div>
         <label>Id: </label>
         <span>{workflow.id}</span>
       </div>
       <div>
-        <label>Connector: </label>
-        <span>{workflow.connector}</span>
-      </div>
-      <div>
-        <label>Action: </label>
-        <span>{workflow.action}</span>
-      </div>
-      <div>
-        <label>Filters: </label>
-        <span>{JSON.stringify(workflow.filters)}</span>
+        <label>Name: </label>
+        <span>{workflow.name}</span>
       </div>
     </div>)
   }
@@ -39,7 +31,18 @@ const WorkflowsLanding = ({workspace}) => {
     (workflow) => <Workflow workflow={workflow} key={workflow.id}/>
   )
 
-  return <main id="workflows-landing-container">{workflowElements}</main>
+  return <main id="workflows-landing-container">
+    <div className="space-between align-center side-margins">
+      <h1>Workflows</h1>
+      <div>
+        <a href="#workflows/new" className="space-around align-center no-style">
+          <img src="/assets/fa/advanced-options/raw-svg/solid/plus.svg" width="28px" height="28px"/>
+          <span className="side-padding">New Workflow</span>
+        </a>
+      </div>
+    </div>
+    {workflowElements}
+  </main>
 }
 
 module.exports = {WorkflowsLanding}
