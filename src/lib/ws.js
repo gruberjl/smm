@@ -1,5 +1,6 @@
 window.ws = new WebSocket('ws://localhost:8080')
 window.listeners = []
+const {store} = require('./store')
 
 window.ws.onopen = function () {
   console.log('websocket is connected ...')
@@ -13,6 +14,7 @@ window.ws.onmessage = function (ev) {
   if (!data.action)
     return
 
+  store.dispatch({type:'ws', data})
   window.listeners.forEach((listener) => {
     if (data.action.match(listener.regex)) {
       listener.cb(data)

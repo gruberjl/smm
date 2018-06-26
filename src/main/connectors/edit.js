@@ -1,19 +1,16 @@
 const React = require('react')
+const {connect} = require('react-redux')
 const {api} = require('../../lib/index.js')
 const {ConnectorEditCard} = require('./edit-card.js')
 const {ConnectorNewCard} = require('./new-card.js')
 
-class ConnectorsEdit extends React.Component {
+class Component extends React.Component {
   constructor(props) {
     super(props)
 
-    const arrLocation = this.props.locationHash.split('/')
-    const isNew = arrLocation[1] == 'new'
-    let connector = {}
-    if (!isNew)
-      connector = Object.assign({}, this.props.workspace.connectors[arrLocation[2]])
+    const connector = Object.assign({}, props.initialConnector)
 
-    this.state = {isNew, connector, initialConnector: Object.assign({}, connector)}
+    this.state = {connector}
   }
 
   connectorChanged(connector) {
@@ -26,11 +23,15 @@ class ConnectorsEdit extends React.Component {
 
   deleteConnector() {
     api.workspaces.deleteItem(this.props.workspace.id, this.state.connector.id, 'connectors')
+      .then((res) => {
+        if (res.status)
+          window.location = '#connectors'
+      })
   }
 
   render() {
     const connector = this.state.connector
-    const headerText = this.state.isNew ? 'Create New Connector' : `Edit Connector: ${this.state.initialConnector.name}`
+    const headerText = this.props.isNew ? 'Create New Connector' : `Edit Connector: ${this.props.initialConnector.name}`
 
     let card
     if (this.props.locationHash.split('/')[1] == 'new') {
@@ -55,5 +56,17 @@ class ConnectorsEdit extends React.Component {
     </main>
   }
 }
+
+const mapStateToProps = (state, props) => {
+  const arrLocation = props.locationHash.split('/')
+
+  const isNew = arrLocation[1] == 'new'
+  const initialConnector = isNew ? {} : state.workspace.connectors[arrLocation[2]]
+  const workspace = state.workspace
+
+  return {isNew, initialConnector, workspace}
+}
+
+const ConnectorsEdit = connect(mapStateToProps)(Component)
 
 module.exports = {ConnectorsEdit}

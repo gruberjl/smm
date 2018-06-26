@@ -1,4 +1,5 @@
 const React = require('react')
+const {connect} = require('react-redux')
 
 class Channel extends React.Component {
   editChannel(id) {
@@ -22,11 +23,7 @@ class Channel extends React.Component {
   }
 }
 
-const ChannelsLanding = ({workspace}) => {
-  const channels = Object.keys(workspace.channels).map(
-    (key) => Object.assign({}, workspace.channels[key])
-  )
-
+const Component = ({channels}) => {
   const channelElements = channels.map(
     (channel) => <Channel channel={channel} key={channel.id}/>
   )
@@ -44,5 +41,13 @@ const ChannelsLanding = ({workspace}) => {
     {channelElements}
   </main>
 }
+
+const mapStateToProps = (state) => {
+  const channels = Object.keys(state.workspace.channels).map((key) => state.workspace.channels[key])
+
+  return {channels}
+}
+
+const ChannelsLanding = connect(mapStateToProps)(Component)
 
 module.exports = {ChannelsLanding}

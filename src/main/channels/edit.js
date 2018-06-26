@@ -1,18 +1,15 @@
 const React = require('react')
+const {connect} = require('react-redux')
 const {api} = require('../../lib/index.js')
 const {ChannelEditCard} = require('./edit-card.js')
 
-class ChannelsEdit extends React.Component {
+class Component extends React.Component {
   constructor(props) {
     super(props)
 
-    const arrLocation = this.props.locationHash.split('/')
-    const isNew = arrLocation[1] == 'new'
-    let channel = {}
-    if (!isNew)
-      channel = Object.assign({}, this.props.workspace.channels[arrLocation[2]])
+    const channel = Object.assign({}, props.initialChannel)
 
-    this.state = {isNew, channel, initialChannel: Object.assign({}, channel)}
+    this.state = {channel}
   }
 
   channelChanged(channel) {
@@ -24,12 +21,17 @@ class ChannelsEdit extends React.Component {
   }
 
   deleteChannel() {
-    api.workspaces.deleteItem(this.props.workspace.id, this.state.channel.id, 'channels')
+    api.workspaces
+      .deleteItem(this.props.workspace.id, this.state.channel.id, 'channels')
+      .then((res) => {
+        if (res.status)
+          window.location = '#channels'
+      })
   }
 
   render() {
     const channel = this.state.channel
-    const headerText = this.state.isNew ? 'Create New Channel' : `Edit Channel: ${this.state.initialChannel.name}`
+    const headerText = this.props.isNew ? 'Create New Channel' : `Edit Channel: ${this.props.initialChannel.name}`
 
     return <main id="channels-edit-container">
       <header className="side-margins">
@@ -47,5 +49,17 @@ class ChannelsEdit extends React.Component {
     </main>
   }
 }
+
+const mapStateToProps = (state, props) => {
+  const arrLocation = props.locationHash.split('/')
+
+  const isNew = arrLocation[1] == 'new'
+  const initialChannel = isNew ? {} : state.workspace.channels[arrLocation[2]]
+  const workspace = state.workspace
+
+  return {isNew, initialChannel, workspace}
+}
+
+const ChannelsEdit = connect(mapStateToProps)(Component)
 
 module.exports = {ChannelsEdit}

@@ -1,4 +1,5 @@
 const React = require('react')
+const {connect} = require('react-redux')
 
 class Connector extends React.Component {
   editConnector(id) {
@@ -22,11 +23,7 @@ class Connector extends React.Component {
   }
 }
 
-const ConnectorsEditLanding = ({workspace}) => {
-  const connectors = Object.keys(workspace.connectors).map(
-    (key) => Object.assign({}, workspace.connectors[key])
-  )
-
+const Component = ({connectors}) => {
   const ConnectorElements = connectors.map(
     (connector) => <Connector connector={connector} key={connector.id}/>
   )
@@ -44,5 +41,13 @@ const ConnectorsEditLanding = ({workspace}) => {
     {ConnectorElements}
   </main>
 }
+
+const mapStateToProps = (state) => {
+  const connectors = Object.keys(state.workspace.connectors).map((key) => state.workspace.connectors[key])
+
+  return {connectors}
+}
+
+const ConnectorsEditLanding = connect(mapStateToProps)(Component)
 
 module.exports = {ConnectorsEditLanding}

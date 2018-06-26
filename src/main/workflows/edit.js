@@ -1,21 +1,18 @@
 const React = require('react')
+const {connect} = require('react-redux')
 const {api} = require('../../lib/index.js')
 const {WorkflowEditCard} = require('./edit-card.js')
 const {WorkflowEditConnectorCard} = require('./edit-connector-card.js')
 const {WorkflowEditFiltersCard} = require('./edit-filters-card.js')
 const {WorkflowEditChannelCard} = require('./edit-channel-card.js')
 
-class WorkflowsEdit extends React.Component {
+class Component extends React.Component {
   constructor(props) {
     super(props)
 
-    const arrLocation = this.props.locationHash.split('/')
-    const isNew = arrLocation[1] == 'new'
-    let workflow = {filters:{}}
-    if (!isNew)
-      workflow = Object.assign({}, this.props.workspace.workflows[arrLocation[2]])
+    const workflow = Object.assign({}, props.initialWorkflow)
 
-    this.state = {isNew, workflow, initialWorkflow: Object.assign({}, workflow)}
+    this.state = {workflow}
   }
 
   workflowChanged(workflow) {
@@ -28,11 +25,15 @@ class WorkflowsEdit extends React.Component {
 
   deleteWorkflow() {
     api.workspaces.deleteItem(this.props.workspace.id, this.state.workflow.id, 'workflows')
+      .then((res) => {
+        if (res.status)
+          window.location = '#workflows'
+      })
   }
 
   render() {
     const workflow = this.state.workflow
-    const headerText = this.state.isNew ? 'Create New Workflow' : `Edit Workflow: ${this.state.initialWorkflow.name}`
+    const headerText = this.props.isNew ? 'Create New Workflow' : `Edit Workflow: ${this.props.initialWorkflow.name}`
 
     return <main id="workflows-edit-container">
       <header className="side-margins">
@@ -53,5 +54,17 @@ class WorkflowsEdit extends React.Component {
     </main>
   }
 }
+
+const mapStateToProps = (state, props) => {
+  const arrLocation = props.locationHash.split('/')
+
+  const isNew = arrLocation[1] == 'new'
+  const initialWorkflow = isNew ? {} : state.workspace.workflows[arrLocation[2]]
+  const workspace = state.workspace
+
+  return {isNew, initialWorkflow, workspace}
+}
+
+const WorkflowsEdit = connect(mapStateToProps)(Component)
 
 module.exports = {WorkflowsEdit}

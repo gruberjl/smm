@@ -1,4 +1,5 @@
 const React = require('react')
+const {connect} = require('react-redux')
 
 class Workflow extends React.Component {
   editWorkflow(id) {
@@ -22,11 +23,7 @@ class Workflow extends React.Component {
   }
 }
 
-const WorkflowsLanding = ({workspace}) => {
-  const workflows = Object.keys(workspace.workflows).map(
-    (key) => Object.assign({}, workspace.workflows[key])
-  )
-
+const Component = ({workflows}) => {
   const workflowElements = workflows.map(
     (workflow) => <Workflow workflow={workflow} key={workflow.id}/>
   )
@@ -44,5 +41,13 @@ const WorkflowsLanding = ({workspace}) => {
     {workflowElements}
   </main>
 }
+
+const mapStateToProps = (state) => {
+  const workflows = Object.keys(state.workspace.workflows).map((key) => state.workspace.workflows[key])
+
+  return {workflows}
+}
+
+const WorkflowsLanding = connect(mapStateToProps)(Component)
 
 module.exports = {WorkflowsLanding}
