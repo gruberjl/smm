@@ -4,6 +4,8 @@ const {ws} = require('./lib/index.js')
 const {Header} = require('./header.js')
 const {LeftNav} = require('./left-nav.js')
 const {Main} = require('./main/index.js')
+const {Provider} = require('react-redux')
+const {store} = require('./lib/store')
 
 class App extends React.Component {
   constructor() {
@@ -27,13 +29,15 @@ class App extends React.Component {
 
   render() {
     return (
-      <div id="app-root">
-        <Header/>
-        <div id="app-body">
-          <LeftNav channels={this.state.workspace.channels}/>
-          <Main locationHash={this.state.locationHash} messages={this.state.messages} workspace={this.state.workspace}/>
+      <Provider store={store}>
+        <div id="app-root">
+          <Header/>
+          <div id="app-body">
+            <LeftNav channels={this.state.workspace.channels}/>
+            <Main locationHash={this.state.locationHash} messages={this.state.messages} workspace={this.state.workspace}/>
+          </div>
         </div>
-      </div>
+      </Provider>
     )
   }
 }

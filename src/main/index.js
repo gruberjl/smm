@@ -3,6 +3,7 @@ const {Channel} = require('./channel.js')
 const {Workflows} = require('./workflows/index.js')
 const {Channels} = require('./channels/index.js')
 const {Connectors} = require('./connectors/index.js')
+const {Landing} = require('./landing.js')
 
 const Main = (props) => {
   const arrLocation = props.locationHash.split('/')
@@ -18,7 +19,7 @@ const Main = (props) => {
     return <Connectors {...props}/>
   }
 
-  return <main/>
+  return <Landing/>
 }
 
 module.exports = {Main}
