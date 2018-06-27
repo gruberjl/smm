@@ -3,6 +3,7 @@ const ReactDOM = require('react-dom')
 const {Provider} = require('react-redux')
 const {store} = require('./lib/store')
 const {AppRoot} = require('./app-root.js')
+const {BrowserRouter} = require('react-router-dom')
 
 class App extends React.Component {
   constructor() {
@@ -22,7 +23,9 @@ class App extends React.Component {
   render() {
     return (
       <Provider store={store}>
-        <AppRoot {...this.props} {...this.state}/>
+        <BrowserRouter>
+          <AppRoot {...this.props} {...this.state}/>
+        </BrowserRouter>
       </Provider>
     )
   }

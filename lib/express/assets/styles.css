@@ -230,10 +230,14 @@ aside#left-nav {
   overflow-y: auto;
 }
 
-main {
+.main-container {
   flex: 1;
   overflow-y: scroll;
   background: rgba(1,1,1,.03);
+}
+
+main {
+
 }
 
 main#messages-container {

@@ -1,15 +1,14 @@
 const React = require('react')
+const {Route} = require('react-router-dom')
 const {WorkflowsLanding} = require('./landing.js')
-const {WorkflowsEdit} = require('./edit.js')
+const {WorkflowsEdit} = require('./edit.page.js')
 
-const Workflows = (props) => {
-  const arrLocation = props.locationHash.split('/')
-
-  if (arrLocation.length > 1 && (arrLocation[1] == 'edit' || arrLocation[1] == 'new')) {
-    return <WorkflowsEdit {...props}/>
-  }
-
-  return <WorkflowsLanding {...props}/>
-}
+const Workflows = () => (
+  <div>
+    <Route path="/workflows" exact component={WorkflowsLanding} />
+    <Route path="/workflows/:persistence(edit)/:id" component={WorkflowsEdit} />
+    <Route path="/workflows/:persistence(new)" component={WorkflowsEdit} />
+  </div>
+)
 
 module.exports = {Workflows}

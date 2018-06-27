@@ -1,5 +1,6 @@
 const React = require('react')
 const {connect} = require('react-redux')
+const {Route, withRouter} = require('react-router-dom')
 const {api} = require('../../lib/index.js')
 const {ConnectorEditCard} = require('./edit-card.js')
 const {ConnectorNewCard} = require('./new-card.js')
@@ -25,7 +26,7 @@ class Component extends React.Component {
     api.workspaces.deleteItem(this.props.workspace.id, this.state.connector.id, 'connectors')
       .then((res) => {
         if (res.status)
-          window.location = '#connectors'
+          this.props.history.push('/connectors')
       })
   }
 
@@ -33,12 +34,9 @@ class Component extends React.Component {
     const connector = this.state.connector
     const headerText = this.props.isNew ? 'Create New Connector' : `Edit Connector: ${this.props.initialConnector.name}`
 
-    let card
-    if (this.props.locationHash.split('/')[1] == 'new') {
-      card = <ConnectorNewCard {...this.props} connector={connector} onChange={this.connectorChanged.bind(this)}/>
-    } else {
-      card = <ConnectorEditCard {...this.props} connector={connector} onChange={this.connectorChanged.bind(this)}/>
-    }
+    const card = this.props.isNew ?
+      <ConnectorNewCard connector={connector} onChange={this.connectorChanged.bind(this)}/> :
+      <ConnectorEditCard connector={connector} onChange={this.connectorChanged.bind(this)}/>
 
     return <main id="connectors-edit-container">
       <header className="side-margins">
@@ -58,15 +56,15 @@ class Component extends React.Component {
 }
 
 const mapStateToProps = (state, props) => {
-  const arrLocation = props.locationHash.split('/')
+  const params = props.match.params
 
-  const isNew = arrLocation[1] == 'new'
-  const initialConnector = isNew ? {} : state.workspace.connectors[arrLocation[2]]
+  const isNew = params.persistence == 'new'
+  const initialConnector = isNew ? {} : state.workspace.connectors[params.id]
   const workspace = state.workspace
 
   return {isNew, initialConnector, workspace}
 }
 
-const ConnectorsEdit = connect(mapStateToProps)(Component)
+const ConnectorsEdit = withRouter(connect(mapStateToProps)(Component))
 
 module.exports = {ConnectorsEdit}

@@ -1,10 +1,11 @@
 const React = require('react')
 const {connect} = require('react-redux')
+const {Link, withRouter} = require('react-router-dom')
 
 class Connector extends React.Component {
   editConnector(id) {
     return () => {
-      window.location = `#connectors/edit/${id}`
+      this.props.history.push(`/connectors/edit/${id}`)
     }
   }
 
@@ -23,19 +24,19 @@ class Connector extends React.Component {
   }
 }
 
-const Component = ({connectors}) => {
+const Component = ({connectors, history}) => {
   const ConnectorElements = connectors.map(
-    (connector) => <Connector connector={connector} key={connector.id}/>
+    (connector) => <Connector connector={connector} key={connector.id} history={history}/>
   )
 
   return <main id="connectors-landing-container">
     <div className="space-between align-center side-margins">
       <h1>Connectors</h1>
       <div>
-        <a href="#connectors/new" className="space-around align-center no-style">
+        <Link to="/connectors/new" className="space-around align-center no-style">
           <img src="/assets/fa/advanced-options/raw-svg/solid/plus.svg" width="28px" height="28px"/>
           <span className="side-padding">New Connector</span>
-        </a>
+        </Link>
       </div>
     </div>
     {ConnectorElements}
@@ -48,6 +49,6 @@ const mapStateToProps = (state) => {
   return {connectors}
 }
 
-const ConnectorsEditLanding = connect(mapStateToProps)(Component)
+const ConnectorsEditLanding = withRouter(connect(mapStateToProps)(Component))
 
 module.exports = {ConnectorsEditLanding}

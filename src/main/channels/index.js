@@ -1,15 +1,14 @@
 const React = require('react')
+const {Route} = require('react-router-dom')
 const {ChannelsLanding} = require('./landing.js')
-const {ChannelsEdit} = require('./edit.js')
+const {ChannelsEdit} = require('./edit.page.js')
 
-const Channels = (props) => {
-  const arrLocation = props.locationHash.split('/')
-
-  if (arrLocation.length > 1 && (arrLocation[1] == 'edit' || arrLocation[1] == 'new')) {
-    return <ChannelsEdit {...props}/>
-  }
-
-  return <ChannelsLanding {...props}/>
-}
+const Channels = () => (
+  <div>
+    <Route path="/channels" exact component={ChannelsLanding} />
+    <Route path="/channels/:persistence(edit)/:id" component={ChannelsEdit} />
+    <Route path="/channels/:persistence(new)" component={ChannelsEdit} />
+  </div>
+)
 
 module.exports = {Channels}

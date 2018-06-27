@@ -1,5 +1,6 @@
 const React = require('react')
 const {connect} = require('react-redux')
+const {withRouter} = require('react-router-dom')
 const {api} = require('../../lib/index.js')
 const {ChannelEditCard} = require('./edit-card.js')
 
@@ -25,7 +26,7 @@ class Component extends React.Component {
       .deleteItem(this.props.workspace.id, this.state.channel.id, 'channels')
       .then((res) => {
         if (res.status)
-          window.location = '#channels'
+          this.props.history.push('/channels')
       })
   }
 
@@ -51,15 +52,15 @@ class Component extends React.Component {
 }
 
 const mapStateToProps = (state, props) => {
-  const arrLocation = props.locationHash.split('/')
+  const params = props.match.params
 
-  const isNew = arrLocation[1] == 'new'
-  const initialChannel = isNew ? {} : state.workspace.channels[arrLocation[2]]
+  const isNew = params.persistence == 'new'
+  const initialChannel = isNew ? {} : state.workspace.channels[params.id]
   const workspace = state.workspace
 
   return {isNew, initialChannel, workspace}
 }
 
-const ChannelsEdit = connect(mapStateToProps)(Component)
+const ChannelsEdit = withRouter(connect(mapStateToProps)(Component))
 
 module.exports = {ChannelsEdit}

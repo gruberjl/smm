@@ -5,6 +5,7 @@ const {WorkflowEditCard} = require('./edit-card.js')
 const {WorkflowEditConnectorCard} = require('./edit-connector-card.js')
 const {WorkflowEditFiltersCard} = require('./edit-filters-card.js')
 const {WorkflowEditChannelCard} = require('./edit-channel-card.js')
+const {withRouter} = require('react-router-dom')
 
 class Component extends React.Component {
   constructor(props) {
@@ -27,7 +28,7 @@ class Component extends React.Component {
     api.workspaces.deleteItem(this.props.workspace.id, this.state.workflow.id, 'workflows')
       .then((res) => {
         if (res.status)
-          window.location = '#workflows'
+          this.props.history.push('/workflows')
       })
   }
 
@@ -56,15 +57,15 @@ class Component extends React.Component {
 }
 
 const mapStateToProps = (state, props) => {
-  const arrLocation = props.locationHash.split('/')
+  const params = props.match.params
 
-  const isNew = arrLocation[1] == 'new'
-  const initialWorkflow = isNew ? {} : state.workspace.workflows[arrLocation[2]]
+  const isNew = params.persistence == 'new'
+  const initialWorkflow = isNew ? {filters:{language:'en', quality:'low'}} : state.workspace.workflows[params.id]
   const workspace = state.workspace
 
   return {isNew, initialWorkflow, workspace}
 }
 
-const WorkflowsEdit = connect(mapStateToProps)(Component)
+const WorkflowsEdit = withRouter(connect(mapStateToProps)(Component))
 
 module.exports = {WorkflowsEdit}

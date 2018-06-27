@@ -9,6 +9,7 @@ class ConnectorEditCard extends React.Component {
 
   render() {
     const connector = this.props.connector
+    console.log(this.props)
     return <div id="connector-edit-card" className="card margins padding">
       <div>
         <label>ID: </label>

@@ -1,5 +1,6 @@
 const React = require('react')
 const {connect} = require('react-redux')
+const {withRouter} = require('react-router-dom')
 
 const Component = ({workspace}) => (
   <main>
@@ -9,6 +10,6 @@ const Component = ({workspace}) => (
 
 const mapStateToProps = (state) => ({workspace: state.workspace})
 
-const Landing = connect(mapStateToProps)(Component)
+const Landing = withRouter(connect(mapStateToProps)(Component))
 
 module.exports = {Landing}

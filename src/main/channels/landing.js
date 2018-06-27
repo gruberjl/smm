@@ -1,10 +1,11 @@
 const React = require('react')
 const {connect} = require('react-redux')
+const {Link, withRouter} = require('react-router-dom')
 
 class Channel extends React.Component {
   editChannel(id) {
     return () => {
-      window.location = `#channels/edit/${id}`
+      this.props.history.push(`/channels/edit/${id}`)
     }
   }
 
@@ -23,19 +24,19 @@ class Channel extends React.Component {
   }
 }
 
-const Component = ({channels}) => {
+const Component = ({channels, history}) => {
   const channelElements = channels.map(
-    (channel) => <Channel channel={channel} key={channel.id}/>
+    (channel) => <Channel channel={channel} key={channel.id} history={history}/>
   )
 
   return <main id="channels-landing-container">
     <div className="space-between align-center side-margins">
       <h1>Channels</h1>
       <div>
-        <a href="#channels/new" className="space-around align-center no-style">
+        <Link to="/channels/new" className="space-around align-center no-style">
           <img src="/assets/fa/advanced-options/raw-svg/solid/plus.svg" width="28px" height="28px"/>
           <span className="side-padding">New Channel</span>
-        </a>
+        </Link>
       </div>
     </div>
     {channelElements}
@@ -48,6 +49,6 @@ const mapStateToProps = (state) => {
   return {channels}
 }
 
-const ChannelsLanding = connect(mapStateToProps)(Component)
+const ChannelsLanding = withRouter(connect(mapStateToProps)(Component))
 
 module.exports = {ChannelsLanding}

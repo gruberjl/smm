@@ -1,15 +1,14 @@
 const React = require('react')
+const {Route} = require('react-router-dom')
 const {ConnectorsEditLanding} = require('./landing.js')
-const {ConnectorsEdit} = require('./edit.js')
+const {ConnectorsEdit} = require('./edit.page.js')
 
-const Connectors = (props) => {
-  const arrLocation = props.locationHash.split('/')
-
-  if (arrLocation.length > 1 && (arrLocation[1] == 'edit' || arrLocation[1] == 'new')) {
-    return <ConnectorsEdit {...props}/>
-  }
-
-  return <ConnectorsEditLanding {...props}/>
-}
+const Connectors = () => (
+  <div>
+    <Route path="/connectors" exact component={ConnectorsEditLanding} />
+    <Route path="/connectors/:persistence(edit)/:id" component={ConnectorsEdit} />
+    <Route path="/connectors/:persistence(new)" component={ConnectorsEdit} />
+  </div>
+)
 
 module.exports = {Connectors}

@@ -1,10 +1,11 @@
 const React = require('react')
 const {connect} = require('react-redux')
+const {Link, withRouter} = require('react-router-dom')
 
 class Workflow extends React.Component {
   editWorkflow(id) {
     return () => {
-      window.location = `#workflows/edit/${id}`
+      this.props.history.push(`/workflows/edit/${id}`)
     }
   }
 
@@ -23,19 +24,19 @@ class Workflow extends React.Component {
   }
 }
 
-const Component = ({workflows}) => {
+const Component = ({workflows, history}) => {
   const workflowElements = workflows.map(
-    (workflow) => <Workflow workflow={workflow} key={workflow.id}/>
+    (workflow) => <Workflow workflow={workflow} key={workflow.id} history={history}/>
   )
 
   return <main id="workflows-landing-container">
     <div className="space-between align-center side-margins">
       <h1>Workflows</h1>
       <div>
-        <a href="#workflows/new" className="space-around align-center no-style">
+        <Link to="/workflows/new" className="space-around align-center no-style">
           <img src="/assets/fa/advanced-options/raw-svg/solid/plus.svg" width="28px" height="28px"/>
           <span className="side-padding">New Workflow</span>
-        </a>
+        </Link>
       </div>
     </div>
     {workflowElements}
@@ -48,6 +49,6 @@ const mapStateToProps = (state) => {
   return {workflows}
 }
 
-const WorkflowsLanding = connect(mapStateToProps)(Component)
+const WorkflowsLanding = withRouter(connect(mapStateToProps)(Component))
 
 module.exports = {WorkflowsLanding}
