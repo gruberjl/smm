@@ -1,16 +1,14 @@
-const workspace = (oldState={}, action) => {
-  let state = Object.assign({}, oldState)
+const messages = (oldState={all:[]}, action) => {
+  const state = Object.assign({}, oldState)
 
-  if (typeof oldState === 'undefined') {
-    state = window.intitalWorkspace
+  if (action.type=='ws' && action.data.action=='NEW_MESSAGES') {
+    const newMessages = action.data.messages.map(
+      (message) => Object.assign({workflow: action.data.workflow}, message)
+    )
+    state.all = [].concat(oldState.all, newMessages)
   }
 
-  if (action.type=='ws' && action.data.action=='WORKSPACE_UPDATED') {
-    state = action.data.workspace
-  }
-
-  console.info(action)
   return state
 }
 
-module.exports = {workspace}
+module.exports = {messages}

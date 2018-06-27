@@ -1,4 +1,6 @@
 const React = require('react')
+const {connect} = require('react-redux')
+const {withRouter} = require('react-router-dom')
 
 const filterMessagesByChannel = (channel, messages) => {
   const filteredMessages = messages.filter(
@@ -37,23 +39,25 @@ const MessageCard = ({message}) => (
   </div>
 )
 
-class Channel extends React.Component {
-  render() {
-    let domMessages = []
-    if (this.props.locationHash.split('/')[0] == 'channel') {
-      const currentChannel = this.props.locationHash.split('/')[1]
-      const filteredMessages = filterMessagesByChannel(currentChannel, this.props.messages)
-      domMessages = filteredMessages.map((msg) => (
-        <MessageCard message={msg} key={msg.id}/>
-      ))
-    }
-
-    return (
-      <main id="messages-container">
-        {domMessages}
-      </main>
-    )
-  }
+const Component = ({messages}) => {
+  return (
+    <main id="messages-container">
+      {messages.map((message) => (
+        <MessageCard message={message} key={message.id}/>
+      ))}
+    </main>
+  )
 }
+
+const mapStateToProps = (state, props) => {
+  const params = props.match.params
+  const workspace = state.workspace
+  const channel = workspace.channels[params.id]
+  const messages = state.messages.all.filter(message => message.workflow.channel == channel.id)
+
+  return {channel, workspace, messages}
+}
+
+const Channel = withRouter(connect(mapStateToProps)(Component))
 
 module.exports = {Channel}
