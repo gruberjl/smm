@@ -11,14 +11,7 @@ class App extends React.Component {
     super()
     this.state = {
       messages: [],
-      locationHash: window.location.hash.substr(1)
     }
-
-    window.onhashchange = () => {
-      this.setState({locationHash: window.location.hash.substr(1)})
-    }
-
-    require('./lib/ws.js')
   }
 
   render() {

@@ -3,25 +3,25 @@ const uuid = require('uuid/v4')
 
 const update = (workspaceId, data) => axios({
   method: 'post',
-  url: `/api/v1/workspaces/${workspaceId}/update`,
+  url: `/api/v2/workspaces/${workspaceId}/update`,
   data
 })
 
-const saveItem = (workspaceId, item, table) => {
-  const id = item.id || uuid()
+const remove = (workspaceId, data) => axios({
+  method: 'post',
+  url: `/api/v2/workspaces/${workspaceId}/remove`,
+  data
+})
 
-  const data = {}
-  data[table] = {}
-  data[table][id] = Object.assign({}, item, {id})
+const saveItem = (workspaceId, item) => {
+  if (!item._id)
+    item._id = uuid()
 
-  return update(workspaceId, data)
+  return update(workspaceId, item)
 }
 
-const deleteItem = (workspaceId, id, table) => {
-  const data = {}
-  data[table] = {}
-  data[table][id] = null
-  return update(workspaceId, data)
+const deleteItem = (workspaceId, doc) => {
+  return remove(workspaceId, doc)
 }
 
 const workspaces = {update, saveItem, deleteItem}

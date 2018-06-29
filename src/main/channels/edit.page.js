@@ -3,6 +3,7 @@ const {connect} = require('react-redux')
 const {withRouter} = require('react-router-dom')
 const {api} = require('../../lib/index.js')
 const {ChannelEditCard} = require('./edit-card.js')
+const templates = require('../../lib/templates')
 
 class Component extends React.Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class Component extends React.Component {
 
   deleteChannel() {
     api.workspaces
-      .deleteItem('workspace1', this.state.channel._id, 'channels')
+      .deleteItem('workspace1', this.state.channel, 'channels')
       .then((res) => {
         if (res.status)
           this.props.history.push('/channels')
@@ -55,7 +56,9 @@ const mapStateToProps = (state, props) => {
   const params = props.match.params
 
   const isNew = params.persistence == 'new'
-  const initialChannel = isNew ? {} : state.workspace.channels.find((channel) => channel._id == params._id)
+  const initialChannel = isNew ?
+    templates.channel() :
+    state.workspace.channels.find((channel) => channel._id == params._id)
   const workspace = state.workspace
 
   return {isNew, initialChannel, workspace}

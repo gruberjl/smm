@@ -15,7 +15,7 @@ class ChannelEditCard extends React.Component {
         <span>{channel._id}</span>
       </div>
       <div>
-        <input type="text" placeholder="Channel Name" value={channel.name || ''} onChange={this.handleChange.bind(this)} name="name"/>
+        <input type="text" placeholder="Channel Name" value={channel.name} onChange={this.handleChange.bind(this)} name="name"/>
       </div>
       {JSON.stringify(channel)}
     </div>
