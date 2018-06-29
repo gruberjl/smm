@@ -12,7 +12,7 @@ class ChannelEditCard extends React.Component {
     return <div id="channel-edit-card" className="card margins padding">
       <div>
         <label>ID: </label>
-        <span>{channel.id}</span>
+        <span>{channel._id}</span>
       </div>
       <div>
         <input type="text" placeholder="Channel Name" value={channel.name || ''} onChange={this.handleChange.bind(this)} name="name"/>

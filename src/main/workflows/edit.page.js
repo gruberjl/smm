@@ -21,11 +21,11 @@ class Component extends React.Component {
   }
 
   saveWorkflow() {
-    api.workspaces.saveItem(this.props.workspace.id, this.state.workflow, 'workflows')
+    api.workspaces.saveItem('workspace1', this.state.workflow, 'workflows')
   }
 
   deleteWorkflow() {
-    api.workspaces.deleteItem(this.props.workspace.id, this.state.workflow.id, 'workflows')
+    api.workspaces.deleteItem('workspace1', this.state.workflow._id, 'workflows')
       .then((res) => {
         if (res.status)
           this.props.history.push('/workflows')
@@ -60,7 +60,9 @@ const mapStateToProps = (state, props) => {
   const params = props.match.params
 
   const isNew = params.persistence == 'new'
-  const initialWorkflow = isNew ? {filters:{language:'en', quality:'low'}} : state.workspace.workflows[params.id]
+  const initialWorkflow = isNew ?
+    {filters:{language:'en', quality:'low'}} :
+    state.workspace.workflows.find((workflow) => workflow._id == params._id)
   const workspace = state.workspace
 
   return {isNew, initialWorkflow, workspace}

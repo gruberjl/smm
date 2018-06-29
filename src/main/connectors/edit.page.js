@@ -19,11 +19,11 @@ class Component extends React.Component {
   }
 
   saveConnector() {
-    api.workspaces.saveItem(this.props.workspace.id, this.state.connector, 'connectors')
+    api.workspaces.saveItem(this.props.workspace._id, this.state.connector, 'connectors')
   }
 
   deleteConnector() {
-    api.workspaces.deleteItem(this.props.workspace.id, this.state.connector.id, 'connectors')
+    api.workspaces.deleteItem(this.props.workspace._id, this.state.connector._id, 'connectors')
       .then((res) => {
         if (res.status)
           this.props.history.push('/connectors')
@@ -59,7 +59,7 @@ const mapStateToProps = (state, props) => {
   const params = props.match.params
 
   const isNew = params.persistence == 'new'
-  const initialConnector = isNew ? {} : state.workspace.connectors[params.id]
+  const initialConnector = isNew ? {} : state.workspace.connectors.find((connector) => connector._id == params._id)
   const workspace = state.workspace
 
   return {isNew, initialConnector, workspace}

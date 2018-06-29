@@ -3,18 +3,18 @@ const {connect} = require('react-redux')
 const {Link, withRouter} = require('react-router-dom')
 
 class Workflow extends React.Component {
-  editWorkflow(id) {
+  editWorkflow(_id) {
     return () => {
-      this.props.history.push(`/workflows/edit/${id}`)
+      this.props.history.push(`/workflows/edit/${_id}`)
     }
   }
 
   render() {
     const workflow = this.props.workflow
-    return (<div className="card stack margins padding link" onClick={this.editWorkflow(workflow.id)}>
+    return (<div className="card stack margins padding link" onClick={this.editWorkflow(workflow._id)}>
       <div>
-        <label>Id: </label>
-        <span>{workflow.id}</span>
+        <label>_id: </label>
+        <span>{workflow._id}</span>
       </div>
       <div>
         <label>Name: </label>
@@ -26,7 +26,7 @@ class Workflow extends React.Component {
 
 const Component = ({workflows, history}) => {
   const workflowElements = workflows.map(
-    (workflow) => <Workflow workflow={workflow} key={workflow.id} history={history}/>
+    (workflow) => <Workflow workflow={workflow} key={workflow._id} history={history}/>
   )
 
   return <main id="workflows-landing-container">

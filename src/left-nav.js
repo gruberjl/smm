@@ -2,13 +2,13 @@ const React = require('react')
 const {connect} = require('react-redux')
 const {Link} = require('react-router-dom')
 
-const ChannelNavLink = ({id, name}) => (
-  <div><Link to={`/channel/${id}`}>{name}</Link></div>
+const ChannelNavLink = ({_id, name}) => (
+  <div><Link to={`/channel/${_id}`}>{name}</Link></div>
 )
 
 const Component = ({channels}) => {
   const ChannelComponents = channels.map(
-    (channel) => <ChannelNavLink id={channel.id} name={channel.name} key={channel.id}/>
+    (channel) => <ChannelNavLink _id={channel._id} name={channel.name} key={channel._id}/>
   )
 
   return (
@@ -19,11 +19,7 @@ const Component = ({channels}) => {
   )
 }
 
-const mapStateToProps = (state) => {
-  const channels = Object.keys(state.workspace.channels).map((key) => state.workspace.channels[key])
-
-  return {channels}
-}
+const mapStateToProps = (state) => ({channels: state.workspace.channels})
 
 const LeftNav = connect(mapStateToProps)(Component)
 

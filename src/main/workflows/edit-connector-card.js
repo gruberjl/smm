@@ -10,10 +10,9 @@ class WorkflowEditConnectorCard extends React.Component {
 
   render() {
     const workflow = this.props.workflow
-    const connectors = Object.keys(this.props.workspace.connectors).map((id) => {
-      const connector = this.props.workspace.connectors[id]
+    const connectors = this.props.workspace.connectors.map((connector) => {
       return (
-        <option value={connector.id} key={connector.id}>
+        <option value={connector._id} key={connector._id}>
           {connector.name}
         </option>
       )

@@ -3,18 +3,18 @@ const {connect} = require('react-redux')
 const {Link, withRouter} = require('react-router-dom')
 
 class Connector extends React.Component {
-  editConnector(id) {
+  editConnector(_id) {
     return () => {
-      this.props.history.push(`/connectors/edit/${id}`)
+      this.props.history.push(`/connectors/edit/${_id}`)
     }
   }
 
   render() {
     const connector = this.props.connector
-    return (<div className="card stack margins padding link" onClick={this.editConnector(connector.id)}>
+    return (<div className="card stack margins padding link" onClick={this.editConnector(connector._id)}>
       <div>
         <label>Id: </label>
-        <span>{connector.id}</span>
+        <span>{connector._id}</span>
       </div>
       <div>
         <label>Name: </label>
@@ -26,7 +26,7 @@ class Connector extends React.Component {
 
 const Component = ({connectors, history}) => {
   const ConnectorElements = connectors.map(
-    (connector) => <Connector connector={connector} key={connector.id} history={history}/>
+    (connector) => <Connector connector={connector} key={connector._id} history={history}/>
   )
 
   return <main id="connectors-landing-container">
@@ -43,11 +43,7 @@ const Component = ({connectors, history}) => {
   </main>
 }
 
-const mapStateToProps = (state) => {
-  const connectors = Object.keys(state.workspace.connectors).map((key) => state.workspace.connectors[key])
-
-  return {connectors}
-}
+const mapStateToProps = (state) => ({connectors: state.workspace.connectors})
 
 const ConnectorsEditLanding = withRouter(connect(mapStateToProps)(Component))
 

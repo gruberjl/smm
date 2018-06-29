@@ -10,10 +10,9 @@ class WorkflowEditChannelCard extends React.Component {
 
   render() {
     const workflow = this.props.workflow
-    const channels = Object.keys(this.props.workspace.channels).map((id) => {
-      const channel = this.props.workspace.channels[id]
+    const channels = this.props.workspace.channels.map((channel) => {
       return (
-        <option value={channel.id} key={channel.id}>
+        <option value={channel._id} key={channel._id}>
           {channel.name}
         </option>
       )

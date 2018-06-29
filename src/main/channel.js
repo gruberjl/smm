@@ -43,7 +43,7 @@ const Component = ({messages}) => {
   return (
     <main id="messages-container">
       {messages.map((message) => (
-        <MessageCard message={message} key={message.id}/>
+        <MessageCard message={message} key={message._id}/>
       ))}
     </main>
   )
@@ -52,8 +52,8 @@ const Component = ({messages}) => {
 const mapStateToProps = (state, props) => {
   const params = props.match.params
   const workspace = state.workspace
-  const channel = workspace.channels[params.id]
-  const messages = state.messages.all.filter(message => message.workflow.channel == channel.id)
+  const channel = workspace.channels[params._id]
+  const messages = state.messages.all.filter(message => message.workflow.channel == channel._id)
 
   return {channel, workspace, messages}
 }

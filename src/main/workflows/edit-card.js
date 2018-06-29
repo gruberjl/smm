@@ -12,7 +12,7 @@ class WorkflowEditCard extends React.Component {
     return <div id="workflow-edit-card" className="card margins padding">
       <div>
         <label>ID: </label>
-        <span>{workflow.id}</span>
+        <span>{workflow._id}</span>
       </div>
       <div>
         <input type="text" placeholder="Workflow Name" value={workflow.name || ''} onChange={this.handleChange.bind(this)} name="name"/>

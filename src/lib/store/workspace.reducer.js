@@ -1,15 +1,32 @@
-const workspace = (oldState, action) => {
-  let state = Object.assign({}, oldState)
+const workspace = (oldState={docs:[], channels:[], workflows:[], connectors:[]}, action) => {
+  let docs
 
-  if (typeof oldState === 'undefined') {
-    state = window.intitalWorkspace
+  if (action.type=='SET_WORKSPACE') {
+    docs = action.docs
   }
 
-  if (action.type=='ws' && action.action == 'WORKSPACE_UPDATED') {
-    state = action.data.workspace
+  if (action.type=='WORKSPACE_UPDATED') {
+    docs = [].concat(oldState.docs)
+
+    const idx = oldState.docs.findIndex(doc => doc._id == action.doc._id)
+    if (idx == -1) {
+      docs.push(action.doc)
+    } else if(action.doc._deleted) {
+      docs.splice(idx, 1)
+    } else {
+      docs.splice(idx, 1, action.doc)
+    }
   }
 
-  return state
+  if (docs) {
+    const channels = docs.filter((doc) => doc.docType=='channel')
+    const workflows = docs.filter((doc) => doc.docType=='workflow')
+    const connectors = docs.filter((doc) => doc.docType=='connector')
+    const state = {docs, channels, workflows, connectors}
+    return state
+  }
+
+  return oldState
 }
 
 module.exports = {workspace}

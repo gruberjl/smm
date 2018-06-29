@@ -5,7 +5,7 @@ const {ws} = require('../../lib/index.js')
 class ConnectorNewCard extends React.Component {
   constructor(props) {
     super(props)
-    this.state={id:uuid()}
+    this.state={_id:uuid()}
 
     ws.on('WORKSPACE_UPDATED', ({workspace}) => {
       console.info('ConnectorNewCard received WORKSPACE_UPDATED')
@@ -26,7 +26,7 @@ class ConnectorNewCard extends React.Component {
   }
 
   auth() {
-    const url = `/auth/twitter?workspaceId=${this.props.workspace.id}&connectorId=${this.state.id}`
+    const url = `/auth/twitter?workspaceId=workspace1&connectorId=${this.state._id}`
     this.setState({
       authWindow: window.open(url, 'newwindow', 'width=500,height=500')
     })

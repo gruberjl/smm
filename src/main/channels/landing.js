@@ -3,18 +3,18 @@ const {connect} = require('react-redux')
 const {Link, withRouter} = require('react-router-dom')
 
 class Channel extends React.Component {
-  editChannel(id) {
+  editChannel(_id) {
     return () => {
-      this.props.history.push(`/channels/edit/${id}`)
+      this.props.history.push(`/channels/edit/${_id}`)
     }
   }
 
   render() {
     const channel = this.props.channel
-    return (<div className="card stack margins padding link" onClick={this.editChannel(channel.id)}>
+    return (<div className="card stack margins padding link" onClick={this.editChannel(channel._id)}>
       <div>
-        <label>Id: </label>
-        <span>{channel.id}</span>
+        <label>_id: </label>
+        <span>{channel._id}</span>
       </div>
       <div>
         <label>Name: </label>
@@ -26,7 +26,7 @@ class Channel extends React.Component {
 
 const Component = ({channels, history}) => {
   const channelElements = channels.map(
-    (channel) => <Channel channel={channel} key={channel.id} history={history}/>
+    (channel) => <Channel channel={channel} key={channel._id} history={history}/>
   )
 
   return <main id="channels-landing-container">
@@ -43,11 +43,7 @@ const Component = ({channels, history}) => {
   </main>
 }
 
-const mapStateToProps = (state) => {
-  const channels = Object.keys(state.workspace.channels).map((key) => state.workspace.channels[key])
-
-  return {channels}
-}
+const mapStateToProps = (state) => ({channels: state.workspace.channels})
 
 const ChannelsLanding = withRouter(connect(mapStateToProps)(Component))
 

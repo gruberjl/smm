@@ -18,12 +18,12 @@ class Component extends React.Component {
   }
 
   saveChannel() {
-    api.workspaces.saveItem(this.props.workspace.id, this.state.channel, 'channels')
+    api.workspaces.saveItem('workspace1', this.state.channel, 'channels')
   }
 
   deleteChannel() {
     api.workspaces
-      .deleteItem(this.props.workspace.id, this.state.channel.id, 'channels')
+      .deleteItem('workspace1', this.state.channel._id, 'channels')
       .then((res) => {
         if (res.status)
           this.props.history.push('/channels')
@@ -55,7 +55,7 @@ const mapStateToProps = (state, props) => {
   const params = props.match.params
 
   const isNew = params.persistence == 'new'
-  const initialChannel = isNew ? {} : state.workspace.channels[params.id]
+  const initialChannel = isNew ? {} : state.workspace.channels.find((channel) => channel._id == params._id)
   const workspace = state.workspace
 
   return {isNew, initialChannel, workspace}

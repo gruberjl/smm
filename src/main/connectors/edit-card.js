@@ -12,8 +12,8 @@ class ConnectorEditCard extends React.Component {
     console.log(this.props)
     return <div id="connector-edit-card" className="card margins padding">
       <div>
-        <label>ID: </label>
-        <span>{connector.id}</span>
+        <label>_id: </label>
+        <span>{connector._id}</span>
       </div>
       <div>
         <input type="text" placeholder="Connector Name" value={connector.name || ''} onChange={this.handleChange.bind(this)} name="name"/>
