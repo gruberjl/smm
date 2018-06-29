@@ -1,3 +1,5 @@
+document.cookie = `activeWorkspace=${window.intitalWorkspace.id}`
+
 window.ws = new WebSocket('ws://localhost:8080')
 const {store} = require('./store')
 

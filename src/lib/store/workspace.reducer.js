@@ -9,7 +9,6 @@ const workspace = (oldState, action) => {
     state = action.data.workspace
   }
 
-  console.info(action)
   return state
 }
 
