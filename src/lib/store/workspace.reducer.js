@@ -5,7 +5,7 @@ const workspace = (oldState, action) => {
     state = window.intitalWorkspace
   }
 
-  if (action.type=='ws' && action.data.action=='WORKSPACE_UPDATED') {
+  if (action.type=='ws' && action.action == 'WORKSPACE_UPDATED') {
     state = action.data.workspace
   }
 

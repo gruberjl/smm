@@ -1,7 +1,7 @@
 const messages = (oldState={all:[]}, action) => {
   const state = Object.assign({}, oldState)
 
-  if (action.type=='ws' && action.data.action=='NEW_MESSAGES') {
+  if (action.type=='NEW_MESSAGES') {
     const newMessages = action.data.messages.map(
       (message) => Object.assign({workflow: action.data.workflow}, message)
     )
