@@ -6,6 +6,7 @@ const {WorkflowEditConnectorCard} = require('./edit-connector-card.js')
 const {WorkflowEditFiltersCard} = require('./edit-filters-card.js')
 const {WorkflowEditChannelCard} = require('./edit-channel-card.js')
 const {withRouter} = require('react-router-dom')
+const templates = require('../../lib/templates')
 
 class Component extends React.Component {
   constructor(props) {
@@ -61,7 +62,7 @@ const mapStateToProps = (state, props) => {
 
   const isNew = params.persistence == 'new'
   const initialWorkflow = isNew ?
-    {filters:{language:'en', quality:'low'}} :
+    templates.workflow() :
     state.workspace.workflows.find((workflow) => workflow._id == params._id)
   const workspace = state.workspace
 

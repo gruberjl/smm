@@ -43,11 +43,7 @@ const Component = ({workflows, history}) => {
   </main>
 }
 
-const mapStateToProps = (state) => {
-  const workflows = Object.keys(state.workspace.workflows).map((key) => state.workspace.workflows[key])
-
-  return {workflows}
-}
+const mapStateToProps = (state) => ({workflows: state.workspace.workflows})
 
 const WorkflowsLanding = withRouter(connect(mapStateToProps)(Component))
 

@@ -15,7 +15,7 @@ class WorkflowEditFiltersCard extends React.Component {
         <div>
           <label>Select a Language</label>
           <div>
-            <select name="language" onChange={this.handleChange.bind(this)} value={workflow.filters.language || ''}>
+            <select name="language" onChange={this.handleChange.bind(this)} value={workflow.filters.language}>
               <option value=''>All</option>
               <option value='en'>English</option>
             </select>
@@ -25,14 +25,14 @@ class WorkflowEditFiltersCard extends React.Component {
           <label>Enter a search string</label>
           <div>
             <input name="search" type="text" placeholder="Search String"
-              value={workflow.filters.search || ''}
+              value={workflow.filters.search}
               onChange={this.handleChange.bind(this)} />
           </div>
         </div>
         <div>
           <label>Quality</label>
           <div>
-            <select name="quality" onChange={this.handleChange.bind(this)} value={workflow.filters.quality || ''}>
+            <select name="quality" onChange={this.handleChange.bind(this)} value={workflow.filters.quality}>
               <option value='none'>None</option>
               <option value='low'>Low</option>
               <option value='medium'>Medium</option>

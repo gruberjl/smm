@@ -16,4 +16,18 @@ const connector = () => ({
   image: ''
 })
 
-module.exports = {channel, connector}
+const workflow = () => ({
+  _id: uuid(),
+  docType: 'workflow',
+  name: '',
+  connector: '',
+  channel: '',
+  action: '',
+  filters: {
+    language: 'en',
+    search: '',
+    quality: 'low'
+  }
+})
+
+module.exports = {channel, connector, workflow}

@@ -15,7 +15,7 @@ class WorkflowEditCard extends React.Component {
         <span>{workflow._id}</span>
       </div>
       <div>
-        <input type="text" placeholder="Workflow Name" value={workflow.name || ''} onChange={this.handleChange.bind(this)} name="name"/>
+        <input type="text" placeholder="Workflow Name" value={workflow.name} onChange={this.handleChange.bind(this)} name="name"/>
       </div>
       {JSON.stringify(workflow)}
     </div>
