@@ -1,9 +1,10 @@
 const React = require('react')
 const {connect} = require('react-redux')
-const {Route, withRouter} = require('react-router-dom')
+const {withRouter} = require('react-router-dom')
 const {api} = require('../../lib/index.js')
 const {ConnectorEditCard} = require('./edit-card.js')
 const {ConnectorNewCard} = require('./new-card.js')
+const templates = require('../../lib/templates')
 
 class Component extends React.Component {
   constructor(props) {
@@ -59,7 +60,9 @@ const mapStateToProps = (state, props) => {
   const params = props.match.params
 
   const isNew = params.persistence == 'new'
-  const initialConnector = isNew ? {} : state.workspace.connectors.find((connector) => connector._id == params._id)
+  const initialConnector = isNew ?
+    templates.connector() :
+    state.workspace.connectors.find((connector) => connector._id == params._id)
   const workspace = state.workspace
 
   return {isNew, initialConnector, workspace}

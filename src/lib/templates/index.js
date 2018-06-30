@@ -6,4 +6,14 @@ const channel = () => ({
   name: ''
 })
 
-module.exports = {channel}
+const connector = () => ({
+  _id: uuid(),
+  docType: 'connector',
+  name: '',
+  account: '',
+  provider: '',
+  accountName: '',
+  image: ''
+})
+
+module.exports = {channel, connector}

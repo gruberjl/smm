@@ -9,14 +9,13 @@ class ConnectorEditCard extends React.Component {
 
   render() {
     const connector = this.props.connector
-    console.log(this.props)
     return <div id="connector-edit-card" className="card margins padding">
       <div>
         <label>_id: </label>
         <span>{connector._id}</span>
       </div>
       <div>
-        <input type="text" placeholder="Connector Name" value={connector.name || ''} onChange={this.handleChange.bind(this)} name="name"/>
+        <input type="text" placeholder="Connector Name" value={connector.name} onChange={this.handleChange.bind(this)} name="name"/>
       </div>
       {JSON.stringify(connector)}
     </div>

@@ -1,22 +1,14 @@
 const React = require('react')
-const uuid = require('uuid/v4')
-const {ws} = require('../../lib/index.js')
+const {connect} = require('react-redux')
 
-class ConnectorNewCard extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state={_id:uuid()}
-
-    ws.on('WORKSPACE_UPDATED', ({workspace}) => {
-      console.info('ConnectorNewCard received WORKSPACE_UPDATED')
-      console.info(this.state.id)
-      console.info(workspace.connectors)
-      console.info(this.state.authWindow)
-      if (workspace.connectors[this.state.id] && this.state.authWindow) {
-        this.state.authWindow.close()
-        this.setState({authWindow: null})
-      }
-    })
+class Component extends React.Component {
+  componentDidUpdate() {
+    console.info('componentDidUpdate')
+    console.log(this.props)
+    if (this.props.isSaved && this.state.authWindow) {
+      this.state.authWindow.close()
+      this.setState({authWindow: null})
+    }
   }
 
   handleChange(event) {
@@ -26,7 +18,7 @@ class ConnectorNewCard extends React.Component {
   }
 
   auth() {
-    const url = `/auth/twitter?workspaceId=workspace1&connectorId=${this.state._id}`
+    const url = `/auth/twitter?workspaceId=workspace1&connectorId=${this.props.connector._id}`
     this.setState({
       authWindow: window.open(url, 'newwindow', 'width=500,height=500')
     })
@@ -41,5 +33,15 @@ class ConnectorNewCard extends React.Component {
     </div>
   }
 }
+
+const mapStateToProps = (state, props) => {
+  console.log(props.connector._id)
+  const isSaved = Boolean(state.workspace.connectors.find(c => c._id == props.connector._id))
+  console.log(isSaved)
+
+  return {isSaved}
+}
+
+const ConnectorNewCard = connect(mapStateToProps)(Component)
 
 module.exports = {ConnectorNewCard}
