@@ -24,7 +24,7 @@ class Component extends React.Component {
   }
 
   deleteConnector() {
-    api.workspaces.deleteItem(this.props.workspace._id, this.state.connector._id, 'connectors')
+    api.workspaces.deleteItem(this.props.workspace._id, this.state.connector, 'connectors')
       .then((res) => {
         if (res.status)
           this.props.history.push('/connectors')

@@ -26,7 +26,7 @@ class Component extends React.Component {
   }
 
   deleteWorkflow() {
-    api.workspaces.deleteItem('workspace1', this.state.workflow._id, 'workflows')
+    api.workspaces.deleteItem('workspace1', this.state.workflow, 'workflows')
       .then((res) => {
         if (res.status)
           this.props.history.push('/workflows')
