@@ -1,7 +1,7 @@
 const {combineReducers} = require('redux')
 const {workspace} = require('./workspace.reducer.js')
-const {messages} = require('./messages.reducer.js')
+const {channelDbs} = require('./channelDbs.reducer.js')
 
-const reducers = combineReducers({workspace, messages})
+const reducers = combineReducers({workspace, channelDbs})
 
 module.exports = {reducers}
