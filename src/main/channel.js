@@ -3,14 +3,6 @@ const {connect} = require('react-redux')
 const {withRouter} = require('react-router-dom')
 const channelDb = require('../lib/channelDb.js')
 
-const filterMessagesByChannel = (channel, messages) => {
-  const filteredMessages = messages.filter(
-    (msg) => msg.workflow.channel == channel
-  )
-
-  return filteredMessages
-}
-
 const MessageCard = ({message}) => (
   <div className="card message-card stack margins padding">
     <header className="message-card-header">
@@ -64,7 +56,6 @@ const mapStateToProps = (state, props) => {
   const params = props.match.params
   const channel = state.workspace.channels.find((channel) => channel._id == params._id)
   const messages = state.channelDbs[channel.dbName].messages
-  console.log(messages)
 
   return {channel, messages}
 }
