@@ -1,0 +1,3096 @@
+[
+  [
+    {
+      "_id": "twitter:1014253696602042370",
+      "provider": "twitter",
+      "raw": {
+        "created_at": "Tue Jul 03 21:04:59 +0000 2018",
+        "id": 1014253696602042400,
+        "id_str": "1014253696602042370",
+        "full_text": "Over 900 controls in the #Office365 compliance framework let you stay up to date with the ever-evolving industry standards. https://t.co/b0QRQlsT6y https://t.co/ztAvzYdjyx",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          147
+        ],
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Office365",
+              "indices": [
+                25,
+                35
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/b0QRQlsT6y",
+              "expanded_url": "http://stuf.in/bjb52",
+              "display_url": "stuf.in/bjb52",
+              "indices": [
+                124,
+                147
+              ]
+            }
+          ],
+          "media": [
+            {
+              "id": 1014253694886522900,
+              "id_str": "1014253694886522880",
+              "indices": [
+                148,
+                171
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNaXJvWsAADRhj.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNaXJvWsAADRhj.jpg",
+              "url": "https://t.co/ztAvzYdjyx",
+              "display_url": "pic.twitter.com/ztAvzYdjyx",
+              "expanded_url": "https://twitter.com/BellevueTechSol/status/1014253696602042370/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium": {
+                  "w": 445,
+                  "h": 250,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 445,
+                  "h": 250,
+                  "resize": "fit"
+                },
+                "large": {
+                  "w": 445,
+                  "h": 250,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 1014253694886522900,
+              "id_str": "1014253694886522880",
+              "indices": [
+                148,
+                171
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNaXJvWsAADRhj.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNaXJvWsAADRhj.jpg",
+              "url": "https://t.co/ztAvzYdjyx",
+              "display_url": "pic.twitter.com/ztAvzYdjyx",
+              "expanded_url": "https://twitter.com/BellevueTechSol/status/1014253696602042370/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium": {
+                  "w": 445,
+                  "h": 250,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 445,
+                  "h": 250,
+                  "resize": "fit"
+                },
+                "large": {
+                  "w": 445,
+                  "h": 250,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"http://www.contentmx.com\" rel=\"nofollow\">ContentMX</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 963125146998358000,
+          "id_str": "963125146998358016",
+          "name": "Bellevue Technology Solutions",
+          "screen_name": "BellevueTechSol",
+          "location": "Be",
+          "description": "Microsoft Dynamics 365 Experts",
+          "url": "https://t.co/NbBV8wpblz",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https://t.co/NbBV8wpblz",
+                  "expanded_url": "http://BellevueTechnologySolutions.com",
+                  "display_url": "BellevueTechnologySolutions.com",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 5,
+          "friends_count": 17,
+          "listed_count": 0,
+          "created_at": "Mon Feb 12 18:58:23 +0000 2018",
+          "favourites_count": 0,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 74,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "000000",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/963126195607891969/oG-r-5L7_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/963126195607891969/oG-r-5L7_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/963125146998358016/1518462169",
+          "profile_link_color": "1B95E0",
+          "profile_sidebar_border_color": "000000",
+          "profile_sidebar_fill_color": "000000",
+          "profile_text_color": "000000",
+          "profile_use_background_image": false,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": true,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "from": {
+        "displayName": "Bellevue Technology Solutions",
+        "account": "BellevueTechSol",
+        "image": "https://pbs.twimg.com/profile_images/963126195607891969/oG-r-5L7_normal.jpg",
+        "description": "Microsoft Dynamics 365 Experts",
+        "url": "https://t.co/NbBV8wpblz",
+        "followersCount": 5,
+        "isVerified": false
+      },
+      "parent": null,
+      "isReply": false,
+      "isOriginal": true,
+      "message": "Over 900 controls in the #Office365 compliance framework let you stay up to date with the ever-evolving industry standards. https://t.co/b0QRQlsT6y https://t.co/ztAvzYdjyx",
+      "time": "Tue Jul 03 21:04:59 +0000 2018",
+      "workflow": {
+        "_id": "40c2fb59-900b-4e2f-9336-cc0db28aafd9"
+      }
+    },
+    {
+      "_id": "twitter:1014253559511158784",
+      "provider": "twitter",
+      "raw": {
+        "created_at": "Tue Jul 03 21:04:27 +0000 2018",
+        "id": 1014253559511158800,
+        "id_str": "1014253559511158784",
+        "full_text": "Over 900 controls in the #Office365 compliance framework let you stay up to date with the ever-evolving industry standards. https://t.co/sCCJNnwWCr https://t.co/JEEXV6263l",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          147
+        ],
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Office365",
+              "indices": [
+                25,
+                35
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/sCCJNnwWCr",
+              "expanded_url": "http://stuf.in/bjb4r",
+              "display_url": "stuf.in/bjb4r",
+              "indices": [
+                124,
+                147
+              ]
+            }
+          ],
+          "media": [
+            {
+              "id": 1014253558378717200,
+              "id_str": "1014253558378717187",
+              "indices": [
+                148,
+                171
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNaPNNW4AMhBSM.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNaPNNW4AMhBSM.jpg",
+              "url": "https://t.co/JEEXV6263l",
+              "display_url": "pic.twitter.com/JEEXV6263l",
+              "expanded_url": "https://twitter.com/EastbankSol/status/1014253559511158784/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium": {
+                  "w": 445,
+                  "h": 250,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 445,
+                  "h": 250,
+                  "resize": "fit"
+                },
+                "large": {
+                  "w": 445,
+                  "h": 250,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 1014253558378717200,
+              "id_str": "1014253558378717187",
+              "indices": [
+                148,
+                171
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNaPNNW4AMhBSM.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNaPNNW4AMhBSM.jpg",
+              "url": "https://t.co/JEEXV6263l",
+              "display_url": "pic.twitter.com/JEEXV6263l",
+              "expanded_url": "https://twitter.com/EastbankSol/status/1014253559511158784/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium": {
+                  "w": 445,
+                  "h": 250,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 445,
+                  "h": 250,
+                  "resize": "fit"
+                },
+                "large": {
+                  "w": 445,
+                  "h": 250,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"http://www.contentmx.com\" rel=\"nofollow\">ContentMX</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 766089869827375100,
+          "id_str": "766089869827375104",
+          "name": "Eastbank Solutions",
+          "screen_name": "EastbankSol",
+          "location": "Portland, OR",
+          "description": "Cloud Solutions for growing NW businesses and on-premises SharePoint for enterprise. #office365 #azure #sharepoint",
+          "url": null,
+          "entities": {
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 9,
+          "friends_count": 20,
+          "listed_count": 5,
+          "created_at": "Thu Aug 18 01:50:33 +0000 2016",
+          "favourites_count": 8,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 86,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "F5F8FA",
+          "profile_background_image_url": null,
+          "profile_background_image_url_https": null,
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/766091151640145920/nCUrRb3e_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/766091151640145920/nCUrRb3e_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/766089869827375104/1471485934",
+          "profile_link_color": "1DA1F2",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": true,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "from": {
+        "displayName": "Eastbank Solutions",
+        "account": "EastbankSol",
+        "image": "https://pbs.twimg.com/profile_images/766091151640145920/nCUrRb3e_normal.jpg",
+        "description": "Cloud Solutions for growing NW businesses and on-premises SharePoint for enterprise. #office365 #azure #sharepoint",
+        "url": null,
+        "followersCount": 9,
+        "isVerified": false
+      },
+      "parent": null,
+      "isReply": false,
+      "isOriginal": true,
+      "message": "Over 900 controls in the #Office365 compliance framework let you stay up to date with the ever-evolving industry standards. https://t.co/sCCJNnwWCr https://t.co/JEEXV6263l",
+      "time": "Tue Jul 03 21:04:27 +0000 2018",
+      "workflow": {
+        "_id": "40c2fb59-900b-4e2f-9336-cc0db28aafd9"
+      }
+    },
+    {
+      "_id": "twitter:1014253478963826688",
+      "provider": "twitter",
+      "raw": {
+        "created_at": "Tue Jul 03 21:04:07 +0000 2018",
+        "id": 1014253478963826700,
+        "id_str": "1014253478963826688",
+        "full_text": "Upcoming changes to Exchange Web Services (EWS) API for Office 365  https://t.co/9l3EEfZD6O #Office365",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          102
+        ],
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Office365",
+              "indices": [
+                92,
+                102
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/9l3EEfZD6O",
+              "expanded_url": "https://ift.tt/2KsE6Wi",
+              "display_url": "ift.tt/2KsE6Wi",
+              "indices": [
+                68,
+                91
+              ]
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"https://ifttt.com\" rel=\"nofollow\">IFTTT</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 1401459391,
+          "id_str": "1401459391",
+          "name": "Bos365",
+          "screen_name": "Bos365",
+          "location": "Boston, MA",
+          "description": "Boston Office 365 User Group - SharePoint, Exchange, Skype for Business, Flow, PowerApps, Teams etc! all of it! Always looking for speakers and sponsors!",
+          "url": "https://t.co/3503T9BtWN",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https://t.co/3503T9BtWN",
+                  "expanded_url": "http://www.bostono365usergroup.com/",
+                  "display_url": "bostono365usergroup.com",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 840,
+          "friends_count": 1311,
+          "listed_count": 100,
+          "created_at": "Sat May 04 05:12:24 +0000 2013",
+          "favourites_count": 431,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": true,
+          "verified": false,
+          "statuses_count": 3153,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "FFD164",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/987103203643637760/ytxTctpv_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/987103203643637760/ytxTctpv_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/1401459391/1524178580",
+          "profile_link_color": "1B95E0",
+          "profile_sidebar_border_color": "FF8439",
+          "profile_sidebar_fill_color": "FF5B39",
+          "profile_text_color": "FFAF64",
+          "profile_use_background_image": true,
+          "has_extended_profile": true,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": true,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "from": {
+        "displayName": "Bos365",
+        "account": "Bos365",
+        "image": "https://pbs.twimg.com/profile_images/987103203643637760/ytxTctpv_normal.jpg",
+        "description": "Boston Office 365 User Group - SharePoint, Exchange, Skype for Business, Flow, PowerApps, Teams etc! all of it! Always looking for speakers and sponsors!",
+        "url": "https://t.co/3503T9BtWN",
+        "followersCount": 840,
+        "isVerified": false
+      },
+      "parent": null,
+      "isReply": false,
+      "isOriginal": true,
+      "message": "Upcoming changes to Exchange Web Services (EWS) API for Office 365  https://t.co/9l3EEfZD6O #Office365",
+      "time": "Tue Jul 03 21:04:07 +0000 2018",
+      "workflow": {
+        "_id": "40c2fb59-900b-4e2f-9336-cc0db28aafd9"
+      }
+    },
+    {
+      "_id": "twitter:1014253421522714625",
+      "provider": "twitter",
+      "raw": {
+        "created_at": "Tue Jul 03 21:03:54 +0000 2018",
+        "id": 1014253421522714600,
+        "id_str": "1014253421522714625",
+        "full_text": "With more than 100 customizable invoice templates, #Office365 helps a small company look utterly professional. https://t.co/aYXWulK6JN https://t.co/qnUvxDzVhu",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          134
+        ],
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Office365",
+              "indices": [
+                51,
+                61
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/aYXWulK6JN",
+              "expanded_url": "http://stuf.in/bjb3o",
+              "display_url": "stuf.in/bjb3o",
+              "indices": [
+                111,
+                134
+              ]
+            }
+          ],
+          "media": [
+            {
+              "id": 1014253420100902900,
+              "id_str": "1014253420100902917",
+              "indices": [
+                135,
+                158
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNaHKFW4AUxRwu.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNaHKFW4AUxRwu.jpg",
+              "url": "https://t.co/qnUvxDzVhu",
+              "display_url": "pic.twitter.com/qnUvxDzVhu",
+              "expanded_url": "https://twitter.com/Dr401k/status/1014253421522714625/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "large": {
+                  "w": 1280,
+                  "h": 720,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 1200,
+                  "h": 675,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 680,
+                  "h": 383,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 1014253420100902900,
+              "id_str": "1014253420100902917",
+              "indices": [
+                135,
+                158
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNaHKFW4AUxRwu.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNaHKFW4AUxRwu.jpg",
+              "url": "https://t.co/qnUvxDzVhu",
+              "display_url": "pic.twitter.com/qnUvxDzVhu",
+              "expanded_url": "https://twitter.com/Dr401k/status/1014253421522714625/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "large": {
+                  "w": 1280,
+                  "h": 720,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 1200,
+                  "h": 675,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 680,
+                  "h": 383,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"http://www.contentmx.com\" rel=\"nofollow\">ContentMX</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 43754863,
+          "id_str": "43754863",
+          "name": "Petros P. Koumantaros",
+          "screen_name": "Dr401k",
+          "location": "Seattle, WA",
+          "description": "CEO of @SpectrumB2B - a #B2B consulting firm focused on #401k plans, retirement plan administration, business solutions, and management consulting.",
+          "url": "https://t.co/gWRtTydrDm",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https://t.co/gWRtTydrDm",
+                  "expanded_url": "http://www.spconsultants.com",
+                  "display_url": "spconsultants.com",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 205,
+          "friends_count": 34,
+          "listed_count": 9,
+          "created_at": "Sun May 31 20:59:52 +0000 2009",
+          "favourites_count": 13,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": true,
+          "verified": false,
+          "statuses_count": 415,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "022330",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/459120428867272704/BZj3LlqQ_normal.jpeg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/459120428867272704/BZj3LlqQ_normal.jpeg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/43754863/1489368939",
+          "profile_link_color": "0084B4",
+          "profile_sidebar_border_color": "A8C7F7",
+          "profile_sidebar_fill_color": "C0DFEC",
+          "profile_text_color": "333333",
+          "profile_use_background_image": false,
+          "has_extended_profile": true,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "from": {
+        "displayName": "Petros P. Koumantaros",
+        "account": "Dr401k",
+        "image": "https://pbs.twimg.com/profile_images/459120428867272704/BZj3LlqQ_normal.jpeg",
+        "description": "CEO of @SpectrumB2B - a #B2B consulting firm focused on #401k plans, retirement plan administration, business solutions, and management consulting.",
+        "url": "https://t.co/gWRtTydrDm",
+        "followersCount": 205,
+        "isVerified": false
+      },
+      "parent": null,
+      "isReply": false,
+      "isOriginal": true,
+      "message": "With more than 100 customizable invoice templates, #Office365 helps a small company look utterly professional. https://t.co/aYXWulK6JN https://t.co/qnUvxDzVhu",
+      "time": "Tue Jul 03 21:03:54 +0000 2018",
+      "workflow": {
+        "_id": "40c2fb59-900b-4e2f-9336-cc0db28aafd9"
+      }
+    },
+    {
+      "_id": "twitter:1014253416166682624",
+      "provider": "twitter",
+      "raw": {
+        "created_at": "Tue Jul 03 21:03:52 +0000 2018",
+        "id": 1014253416166682600,
+        "id_str": "1014253416166682624",
+        "full_text": "With more than 100 customizable invoice templates, #Office365 helps a small company look utterly professional. https://t.co/owUGIx8VCS https://t.co/kkXpb5l27m",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          134
+        ],
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Office365",
+              "indices": [
+                51,
+                61
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/owUGIx8VCS",
+              "expanded_url": "http://stuf.in/bjb3l",
+              "display_url": "stuf.in/bjb3l",
+              "indices": [
+                111,
+                134
+              ]
+            }
+          ],
+          "media": [
+            {
+              "id": 1014253414799368200,
+              "id_str": "1014253414799368193",
+              "indices": [
+                135,
+                158
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNaG2VX4AEa1PT.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNaG2VX4AEa1PT.jpg",
+              "url": "https://t.co/kkXpb5l27m",
+              "display_url": "pic.twitter.com/kkXpb5l27m",
+              "expanded_url": "https://twitter.com/SpectrumB2B/status/1014253416166682624/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "large": {
+                  "w": 1280,
+                  "h": 720,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 1200,
+                  "h": 675,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 680,
+                  "h": 383,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 1014253414799368200,
+              "id_str": "1014253414799368193",
+              "indices": [
+                135,
+                158
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNaG2VX4AEa1PT.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNaG2VX4AEa1PT.jpg",
+              "url": "https://t.co/kkXpb5l27m",
+              "display_url": "pic.twitter.com/kkXpb5l27m",
+              "expanded_url": "https://twitter.com/SpectrumB2B/status/1014253416166682624/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "large": {
+                  "w": 1280,
+                  "h": 720,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 1200,
+                  "h": 675,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 680,
+                  "h": 383,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"http://www.contentmx.com\" rel=\"nofollow\">ContentMX</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 743545295527501800,
+          "id_str": "743545295527501824",
+          "name": "Spectrum",
+          "screen_name": "SpectrumB2B",
+          "location": "Tacoma, WA",
+          "description": "A leading multidisciplinary #B2B consulting firm, which specializes in #401k management, benefit plan outsourcing, business solutions, & management consulting.",
+          "url": "https://t.co/gWRtTydrDm",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https://t.co/gWRtTydrDm",
+                  "expanded_url": "http://www.spconsultants.com",
+                  "display_url": "spconsultants.com",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 22,
+          "friends_count": 10,
+          "listed_count": 0,
+          "created_at": "Thu Jun 16 20:46:27 +0000 2016",
+          "favourites_count": 5,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 110,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "000000",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/974024676111409152/ZrNwCgl8_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/974024676111409152/ZrNwCgl8_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/743545295527501824/1521060396",
+          "profile_link_color": "4F758B",
+          "profile_sidebar_border_color": "000000",
+          "profile_sidebar_fill_color": "000000",
+          "profile_text_color": "000000",
+          "profile_use_background_image": false,
+          "has_extended_profile": true,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "from": {
+        "displayName": "Spectrum",
+        "account": "SpectrumB2B",
+        "image": "https://pbs.twimg.com/profile_images/974024676111409152/ZrNwCgl8_normal.jpg",
+        "description": "A leading multidisciplinary #B2B consulting firm, which specializes in #401k management, benefit plan outsourcing, business solutions, & management consulting.",
+        "url": "https://t.co/gWRtTydrDm",
+        "followersCount": 22,
+        "isVerified": false
+      },
+      "parent": null,
+      "isReply": false,
+      "isOriginal": true,
+      "message": "With more than 100 customizable invoice templates, #Office365 helps a small company look utterly professional. https://t.co/owUGIx8VCS https://t.co/kkXpb5l27m",
+      "time": "Tue Jul 03 21:03:52 +0000 2018",
+      "workflow": {
+        "_id": "40c2fb59-900b-4e2f-9336-cc0db28aafd9"
+      }
+    },
+    {
+      "_id": "twitter:1014253375813234688",
+      "provider": "twitter",
+      "raw": {
+        "created_at": "Tue Jul 03 21:03:43 +0000 2018",
+        "id": 1014253375813234700,
+        "id_str": "1014253375813234688",
+        "full_text": "Stay compliant. #Office365 adheres to rigorous privacy standards like HIPAA, DPAS, FISMA, AND FERPA--so your customers' trust is well earned. https://t.co/WxVhAoFq9w https://t.co/RkAOb0SOY9",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          165
+        ],
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Office365",
+              "indices": [
+                16,
+                26
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/WxVhAoFq9w",
+              "expanded_url": "http://stuf.in/bjb36",
+              "display_url": "stuf.in/bjb36",
+              "indices": [
+                142,
+                165
+              ]
+            }
+          ],
+          "media": [
+            {
+              "id": 1014253374433316900,
+              "id_str": "1014253374433316864",
+              "indices": [
+                166,
+                189
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNaEf9W0AA-JYv.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNaEf9W0AA-JYv.jpg",
+              "url": "https://t.co/RkAOb0SOY9",
+              "display_url": "pic.twitter.com/RkAOb0SOY9",
+              "expanded_url": "https://twitter.com/YourNewITDept/status/1014253375813234688/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium": {
+                  "w": 600,
+                  "h": 337,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 600,
+                  "h": 337,
+                  "resize": "fit"
+                },
+                "large": {
+                  "w": 600,
+                  "h": 337,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 1014253374433316900,
+              "id_str": "1014253374433316864",
+              "indices": [
+                166,
+                189
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNaEf9W0AA-JYv.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNaEf9W0AA-JYv.jpg",
+              "url": "https://t.co/RkAOb0SOY9",
+              "display_url": "pic.twitter.com/RkAOb0SOY9",
+              "expanded_url": "https://twitter.com/YourNewITDept/status/1014253375813234688/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium": {
+                  "w": 600,
+                  "h": 337,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 600,
+                  "h": 337,
+                  "resize": "fit"
+                },
+                "large": {
+                  "w": 600,
+                  "h": 337,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"http://www.contentmx.com\" rel=\"nofollow\">ContentMX</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 4534969641,
+          "id_str": "4534969641",
+          "name": "Bob Buyers",
+          "screen_name": "YourNewITDept",
+          "location": "",
+          "description": "",
+          "url": null,
+          "entities": {
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 21,
+          "friends_count": 51,
+          "listed_count": 0,
+          "created_at": "Sat Dec 19 11:45:15 +0000 2015",
+          "favourites_count": 21,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 131,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "F5F8FA",
+          "profile_background_image_url": null,
+          "profile_background_image_url_https": null,
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/678189624204759040/CuciG18G_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/678189624204759040/CuciG18G_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/4534969641/1452286313",
+          "profile_link_color": "1DA1F2",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": true,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "from": {
+        "displayName": "Bob Buyers",
+        "account": "YourNewITDept",
+        "image": "https://pbs.twimg.com/profile_images/678189624204759040/CuciG18G_normal.jpg",
+        "description": "",
+        "url": null,
+        "followersCount": 21,
+        "isVerified": false
+      },
+      "parent": null,
+      "isReply": false,
+      "isOriginal": true,
+      "message": "Stay compliant. #Office365 adheres to rigorous privacy standards like HIPAA, DPAS, FISMA, AND FERPA--so your customers' trust is well earned. https://t.co/WxVhAoFq9w https://t.co/RkAOb0SOY9",
+      "time": "Tue Jul 03 21:03:43 +0000 2018",
+      "workflow": {
+        "_id": "40c2fb59-900b-4e2f-9336-cc0db28aafd9"
+      }
+    },
+    {
+      "_id": "twitter:1014253178051874819",
+      "provider": "twitter",
+      "raw": {
+        "created_at": "Tue Jul 03 21:02:56 +0000 2018",
+        "id": 1014253178051874800,
+        "id_str": "1014253178051874819",
+        "full_text": "Nothing says \"cool\" like a bionic limb and nothing does collaboration like #Office365. How do you collaborate? #Limbitless #Microsoft https://t.co/RQmGgoytp0 https://t.co/Uecq4nBxJo",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          157
+        ],
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Office365",
+              "indices": [
+                75,
+                85
+              ]
+            },
+            {
+              "text": "Limbitless",
+              "indices": [
+                111,
+                122
+              ]
+            },
+            {
+              "text": "Microsoft",
+              "indices": [
+                123,
+                133
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/RQmGgoytp0",
+              "expanded_url": "http://stuf.in/bjb24",
+              "display_url": "stuf.in/bjb24",
+              "indices": [
+                134,
+                157
+              ]
+            }
+          ],
+          "media": [
+            {
+              "id": 1014253176533536800,
+              "id_str": "1014253176533536768",
+              "indices": [
+                158,
+                181
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNZ4-uX0AApUwP.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNZ4-uX0AApUwP.jpg",
+              "url": "https://t.co/Uecq4nBxJo",
+              "display_url": "pic.twitter.com/Uecq4nBxJo",
+              "expanded_url": "https://twitter.com/ayetechnologygp/status/1014253178051874819/photo/1",
+              "type": "photo",
+              "sizes": {
+                "large": {
+                  "w": 600,
+                  "h": 400,
+                  "resize": "fit"
+                },
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "small": {
+                  "w": 600,
+                  "h": 400,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 600,
+                  "h": 400,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 1014253176533536800,
+              "id_str": "1014253176533536768",
+              "indices": [
+                158,
+                181
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNZ4-uX0AApUwP.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNZ4-uX0AApUwP.jpg",
+              "url": "https://t.co/Uecq4nBxJo",
+              "display_url": "pic.twitter.com/Uecq4nBxJo",
+              "expanded_url": "https://twitter.com/ayetechnologygp/status/1014253178051874819/photo/1",
+              "type": "photo",
+              "sizes": {
+                "large": {
+                  "w": 600,
+                  "h": 400,
+                  "resize": "fit"
+                },
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "small": {
+                  "w": 600,
+                  "h": 400,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 600,
+                  "h": 400,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"http://www.contentmx.com\" rel=\"nofollow\">ContentMX</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 16329454,
+          "id_str": "16329454",
+          "name": "Ayers Technology Grp",
+          "screen_name": "ayetechnologygp",
+          "location": "Columbus, Boston, & DMV metro area",
+          "description": "Ayers Technology Group provides Cloud Managed Services. Dedicated professionals providing business owners with quality, affordable Cloud Technology services.",
+          "url": "https://t.co/zluWBt1Dwn",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https://t.co/zluWBt1Dwn",
+                  "expanded_url": "http://ayerstechnologygroup.com/",
+                  "display_url": "ayerstechnologygroup.com",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 1041,
+          "friends_count": 2184,
+          "listed_count": 27,
+          "created_at": "Wed Sep 17 14:43:37 +0000 2008",
+          "favourites_count": 97,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 918,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "022330",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_tile": true,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/902217906381049857/bTEgUAHv_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/902217906381049857/bTEgUAHv_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/16329454/1503941065",
+          "profile_link_color": "0084B4",
+          "profile_sidebar_border_color": "A8C7F7",
+          "profile_sidebar_fill_color": "C0DFEC",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": true,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "from": {
+        "displayName": "Ayers Technology Grp",
+        "account": "ayetechnologygp",
+        "image": "https://pbs.twimg.com/profile_images/902217906381049857/bTEgUAHv_normal.jpg",
+        "description": "Ayers Technology Group provides Cloud Managed Services. Dedicated professionals providing business owners with quality, affordable Cloud Technology services.",
+        "url": "https://t.co/zluWBt1Dwn",
+        "followersCount": 1041,
+        "isVerified": false
+      },
+      "parent": null,
+      "isReply": false,
+      "isOriginal": true,
+      "message": "Nothing says \"cool\" like a bionic limb and nothing does collaboration like #Office365. How do you collaborate? #Limbitless #Microsoft https://t.co/RQmGgoytp0 https://t.co/Uecq4nBxJo",
+      "time": "Tue Jul 03 21:02:56 +0000 2018",
+      "workflow": {
+        "_id": "40c2fb59-900b-4e2f-9336-cc0db28aafd9"
+      }
+    },
+    {
+      "_id": "twitter:1014253109684719616",
+      "provider": "twitter",
+      "raw": {
+        "created_at": "Tue Jul 03 21:02:39 +0000 2018",
+        "id": 1014253109684719600,
+        "id_str": "1014253109684719616",
+        "full_text": "#Office365 improves firstline worker productivity which added up to a total savings of $6.7 million over three years for one company. https://t.co/10HWAB6TPb https://t.co/21L1v06O2w",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          157
+        ],
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Office365",
+              "indices": [
+                0,
+                10
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/10HWAB6TPb",
+              "expanded_url": "http://stuf.in/bj862",
+              "display_url": "stuf.in/bj862",
+              "indices": [
+                134,
+                157
+              ]
+            }
+          ],
+          "media": [
+            {
+              "id": 1014253107948253200,
+              "id_str": "1014253107948253184",
+              "indices": [
+                158,
+                181
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNZ0_OXcAABlDL.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNZ0_OXcAABlDL.jpg",
+              "url": "https://t.co/21L1v06O2w",
+              "display_url": "pic.twitter.com/21L1v06O2w",
+              "expanded_url": "https://twitter.com/rbhall_assoc_ll/status/1014253109684719616/photo/1",
+              "type": "photo",
+              "sizes": {
+                "large": {
+                  "w": 600,
+                  "h": 776,
+                  "resize": "fit"
+                },
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium": {
+                  "w": 600,
+                  "h": 776,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 526,
+                  "h": 680,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 1014253107948253200,
+              "id_str": "1014253107948253184",
+              "indices": [
+                158,
+                181
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNZ0_OXcAABlDL.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNZ0_OXcAABlDL.jpg",
+              "url": "https://t.co/21L1v06O2w",
+              "display_url": "pic.twitter.com/21L1v06O2w",
+              "expanded_url": "https://twitter.com/rbhall_assoc_ll/status/1014253109684719616/photo/1",
+              "type": "photo",
+              "sizes": {
+                "large": {
+                  "w": 600,
+                  "h": 776,
+                  "resize": "fit"
+                },
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium": {
+                  "w": 600,
+                  "h": 776,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 526,
+                  "h": 680,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"http://www.contentmx.com\" rel=\"nofollow\">ContentMX</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 898602534,
+          "id_str": "898602534",
+          "name": "RBHall AssociatesLLC",
+          "screen_name": "rbhall_assoc_ll",
+          "location": "Cheltenham PA USA",
+          "description": "Business problems...Technology solutions! Our specialty is in the area of computer hardware | software | cloud service broker/managed services.",
+          "url": "http://t.co/Dty6lwYbhv",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "http://t.co/Dty6lwYbhv",
+                  "expanded_url": "http://www.rbhall.com",
+                  "display_url": "rbhall.com",
+                  "indices": [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 449,
+          "friends_count": 730,
+          "listed_count": 68,
+          "created_at": "Mon Oct 22 22:52:36 +0000 2012",
+          "favourites_count": 59,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 4567,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "0A092E",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/2752312392/305365c82dc0c717e3afe521c855529c_normal.jpeg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/2752312392/305365c82dc0c717e3afe521c855529c_normal.jpeg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/898602534/1432073579",
+          "profile_link_color": "89C9FA",
+          "profile_sidebar_border_color": "000000",
+          "profile_sidebar_fill_color": "C0DFEC",
+          "profile_text_color": "333333",
+          "profile_use_background_image": false,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "from": {
+        "displayName": "RBHall AssociatesLLC",
+        "account": "rbhall_assoc_ll",
+        "image": "https://pbs.twimg.com/profile_images/2752312392/305365c82dc0c717e3afe521c855529c_normal.jpeg",
+        "description": "Business problems...Technology solutions! Our specialty is in the area of computer hardware | software | cloud service broker/managed services.",
+        "url": "http://t.co/Dty6lwYbhv",
+        "followersCount": 449,
+        "isVerified": false
+      },
+      "parent": null,
+      "isReply": false,
+      "isOriginal": true,
+      "message": "#Office365 improves firstline worker productivity which added up to a total savings of $6.7 million over three years for one company. https://t.co/10HWAB6TPb https://t.co/21L1v06O2w",
+      "time": "Tue Jul 03 21:02:39 +0000 2018",
+      "workflow": {
+        "_id": "40c2fb59-900b-4e2f-9336-cc0db28aafd9"
+      }
+    },
+    {
+      "_id": "twitter:1014253083742875648",
+      "provider": "twitter",
+      "raw": {
+        "created_at": "Tue Jul 03 21:02:33 +0000 2018",
+        "id": 1014253083742875600,
+        "id_str": "1014253083742875648",
+        "full_text": "Grab attention, get reminders, and get more quick tips to make #Outlook with #Office365 work for you. https://t.co/ZquwFxZz0D https://t.co/du0VLEj2hB",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          125
+        ],
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Outlook",
+              "indices": [
+                63,
+                71
+              ]
+            },
+            {
+              "text": "Office365",
+              "indices": [
+                77,
+                87
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/ZquwFxZz0D",
+              "expanded_url": "http://stuf.in/bjb10",
+              "display_url": "stuf.in/bjb10",
+              "indices": [
+                102,
+                125
+              ]
+            }
+          ],
+          "media": [
+            {
+              "id": 1014253082530730000,
+              "id_str": "1014253082530729985",
+              "indices": [
+                126,
+                149
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNZzgiW0AEGZQ6.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNZzgiW0AEGZQ6.jpg",
+              "url": "https://t.co/du0VLEj2hB",
+              "display_url": "pic.twitter.com/du0VLEj2hB",
+              "expanded_url": "https://twitter.com/DigitalRx_Media/status/1014253083742875648/photo/1",
+              "type": "photo",
+              "sizes": {
+                "small": {
+                  "w": 526,
+                  "h": 680,
+                  "resize": "fit"
+                },
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium": {
+                  "w": 600,
+                  "h": 776,
+                  "resize": "fit"
+                },
+                "large": {
+                  "w": 600,
+                  "h": 776,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 1014253082530730000,
+              "id_str": "1014253082530729985",
+              "indices": [
+                126,
+                149
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNZzgiW0AEGZQ6.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNZzgiW0AEGZQ6.jpg",
+              "url": "https://t.co/du0VLEj2hB",
+              "display_url": "pic.twitter.com/du0VLEj2hB",
+              "expanded_url": "https://twitter.com/DigitalRx_Media/status/1014253083742875648/photo/1",
+              "type": "photo",
+              "sizes": {
+                "small": {
+                  "w": 526,
+                  "h": 680,
+                  "resize": "fit"
+                },
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium": {
+                  "w": 600,
+                  "h": 776,
+                  "resize": "fit"
+                },
+                "large": {
+                  "w": 600,
+                  "h": 776,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"http://www.contentmx.com\" rel=\"nofollow\">ContentMX</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 14072879,
+          "id_str": "14072879",
+          "name": "Digital-360",
+          "screen_name": "DigitalRx_Media",
+          "location": "Boston, MA",
+          "description": "Sales boosting marketing services for Industrial, Life Science and Professional Services Firms.",
+          "url": "http://t.co/UZn9WPG5XE",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "http://t.co/UZn9WPG5XE",
+                  "expanded_url": "http://www.digital-360.co",
+                  "display_url": "digital-360.co",
+                  "indices": [
+                    0,
+                    22
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 1750,
+          "friends_count": 795,
+          "listed_count": 391,
+          "created_at": "Mon Mar 03 15:09:07 +0000 2008",
+          "favourites_count": 331,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 16436,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "9AE4E8",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme17/bg.gif",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme17/bg.gif",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/1006184046047531008/tpfdHzK5_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/1006184046047531008/tpfdHzK5_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/14072879/1530356925",
+          "profile_link_color": "ABB8C2",
+          "profile_sidebar_border_color": "DBE9ED",
+          "profile_sidebar_fill_color": "E6F6F9",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "from": {
+        "displayName": "Digital-360",
+        "account": "DigitalRx_Media",
+        "image": "https://pbs.twimg.com/profile_images/1006184046047531008/tpfdHzK5_normal.jpg",
+        "description": "Sales boosting marketing services for Industrial, Life Science and Professional Services Firms.",
+        "url": "http://t.co/UZn9WPG5XE",
+        "followersCount": 1750,
+        "isVerified": false
+      },
+      "parent": null,
+      "isReply": false,
+      "isOriginal": true,
+      "message": "Grab attention, get reminders, and get more quick tips to make #Outlook with #Office365 work for you. https://t.co/ZquwFxZz0D https://t.co/du0VLEj2hB",
+      "time": "Tue Jul 03 21:02:33 +0000 2018",
+      "workflow": {
+        "_id": "40c2fb59-900b-4e2f-9336-cc0db28aafd9"
+      }
+    },
+    {
+      "_id": "twitter:1014252994764910593",
+      "provider": "twitter",
+      "raw": {
+        "created_at": "Tue Jul 03 21:02:12 +0000 2018",
+        "id": 1014252994764910600,
+        "id_str": "1014252994764910593",
+        "full_text": "A serious positive change for #Exchange Online!\n#ExchangeOnline #O365 #Office365 #Microsoft365\n#Security  https://t.co/Pu2MhbkFUk https://t.co/wiwImbYNBx",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          153
+        ],
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Exchange",
+              "indices": [
+                30,
+                39
+              ]
+            },
+            {
+              "text": "ExchangeOnline",
+              "indices": [
+                48,
+                63
+              ]
+            },
+            {
+              "text": "O365",
+              "indices": [
+                64,
+                69
+              ]
+            },
+            {
+              "text": "Office365",
+              "indices": [
+                70,
+                80
+              ]
+            },
+            {
+              "text": "Microsoft365",
+              "indices": [
+                81,
+                94
+              ]
+            },
+            {
+              "text": "Security",
+              "indices": [
+                95,
+                104
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/Pu2MhbkFUk",
+              "expanded_url": "https://lnkd.in/e4swMzS",
+              "display_url": "lnkd.in/e4swMzS",
+              "indices": [
+                106,
+                129
+              ]
+            },
+            {
+              "url": "https://t.co/wiwImbYNBx",
+              "expanded_url": "https://lnkd.in/e2TuBpq",
+              "display_url": "lnkd.in/e2TuBpq",
+              "indices": [
+                130,
+                153
+              ]
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"http://www.linkedin.com/\" rel=\"nofollow\">LinkedIn</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 829158631,
+          "id_str": "829158631",
+          "name": "JP",
+          "screen_name": "000_JP",
+          "location": "Pennsylvania, USA",
+          "description": "#Azure, #Cloud, #Office365, #Exchange, #PowerBI, #DataScience, #PowerShell & learning are my passions.\nThe absence of information is still information.",
+          "url": "https://t.co/1BAMy7ACzG",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https://t.co/1BAMy7ACzG",
+                  "expanded_url": "http://techkrag.com",
+                  "display_url": "techkrag.com",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 92,
+          "friends_count": 155,
+          "listed_count": 53,
+          "created_at": "Mon Sep 17 14:21:28 +0000 2012",
+          "favourites_count": 2757,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 2773,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "C0DEED",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/989707249378643968/YbQbQt8-_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/989707249378643968/YbQbQt8-_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/829158631/1467574741",
+          "profile_link_color": "1DA1F2",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": true,
+          "default_profile": true,
+          "default_profile_image": false,
+          "following": true,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "from": {
+        "displayName": "JP",
+        "account": "000_JP",
+        "image": "https://pbs.twimg.com/profile_images/989707249378643968/YbQbQt8-_normal.jpg",
+        "description": "#Azure, #Cloud, #Office365, #Exchange, #PowerBI, #DataScience, #PowerShell & learning are my passions.\nThe absence of information is still information.",
+        "url": "https://t.co/1BAMy7ACzG",
+        "followersCount": 92,
+        "isVerified": false
+      },
+      "parent": null,
+      "isReply": false,
+      "isOriginal": true,
+      "message": "A serious positive change for #Exchange Online!\n#ExchangeOnline #O365 #Office365 #Microsoft365\n#Security  https://t.co/Pu2MhbkFUk https://t.co/wiwImbYNBx",
+      "time": "Tue Jul 03 21:02:12 +0000 2018",
+      "workflow": {
+        "_id": "40c2fb59-900b-4e2f-9336-cc0db28aafd9"
+      }
+    },
+    {
+      "_id": "twitter:1014252872186425345",
+      "provider": "twitter",
+      "raw": {
+        "created_at": "Tue Jul 03 21:01:43 +0000 2018",
+        "id": 1014252872186425300,
+        "id_str": "1014252872186425345",
+        "full_text": "Bring innovative ideas to market. The Microsoft Surface Hub and tools within #Office365 provide the digital pathway to get you there--fast. https://t.co/5xq7ra815G https://t.co/PvwX0MM53O",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          163
+        ],
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Office365",
+              "indices": [
+                77,
+                87
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/5xq7ra815G",
+              "expanded_url": "http://stuf.in/bjaz2",
+              "display_url": "stuf.in/bjaz2",
+              "indices": [
+                140,
+                163
+              ]
+            }
+          ],
+          "media": [
+            {
+              "id": 1014252870810701800,
+              "id_str": "1014252870810701825",
+              "indices": [
+                164,
+                187
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNZnL0XkAEOdz6.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNZnL0XkAEOdz6.jpg",
+              "url": "https://t.co/PvwX0MM53O",
+              "display_url": "pic.twitter.com/PvwX0MM53O",
+              "expanded_url": "https://twitter.com/MBITLLC/status/1014252872186425345/photo/1",
+              "type": "photo",
+              "sizes": {
+                "large": {
+                  "w": 600,
+                  "h": 400,
+                  "resize": "fit"
+                },
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium": {
+                  "w": 600,
+                  "h": 400,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 600,
+                  "h": 400,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 1014252870810701800,
+              "id_str": "1014252870810701825",
+              "indices": [
+                164,
+                187
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNZnL0XkAEOdz6.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNZnL0XkAEOdz6.jpg",
+              "url": "https://t.co/PvwX0MM53O",
+              "display_url": "pic.twitter.com/PvwX0MM53O",
+              "expanded_url": "https://twitter.com/MBITLLC/status/1014252872186425345/photo/1",
+              "type": "photo",
+              "sizes": {
+                "large": {
+                  "w": 600,
+                  "h": 400,
+                  "resize": "fit"
+                },
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium": {
+                  "w": 600,
+                  "h": 400,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 600,
+                  "h": 400,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"http://www.contentmx.com\" rel=\"nofollow\">ContentMX</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 949329058827067400,
+          "id_str": "949329058827067392",
+          "name": "MBIT",
+          "screen_name": "MBITLLC",
+          "location": "",
+          "description": "",
+          "url": null,
+          "entities": {
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 0,
+          "friends_count": 1,
+          "listed_count": 0,
+          "created_at": "Fri Jan 05 17:17:40 +0000 2018",
+          "favourites_count": 0,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 15,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "F5F8FA",
+          "profile_background_image_url": null,
+          "profile_background_image_url_https": null,
+          "profile_background_tile": false,
+          "profile_image_url": "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+          "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+          "profile_link_color": "1DA1F2",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": true,
+          "default_profile_image": true,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "from": {
+        "displayName": "MBIT",
+        "account": "MBITLLC",
+        "image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+        "description": "",
+        "url": null,
+        "followersCount": 0,
+        "isVerified": false
+      },
+      "parent": null,
+      "isReply": false,
+      "isOriginal": true,
+      "message": "Bring innovative ideas to market. The Microsoft Surface Hub and tools within #Office365 provide the digital pathway to get you there--fast. https://t.co/5xq7ra815G https://t.co/PvwX0MM53O",
+      "time": "Tue Jul 03 21:01:43 +0000 2018",
+      "workflow": {
+        "_id": "40c2fb59-900b-4e2f-9336-cc0db28aafd9"
+      }
+    },
+    {
+      "_id": "twitter:1014252742733426688",
+      "provider": "twitter",
+      "raw": {
+        "created_at": "Tue Jul 03 21:01:12 +0000 2018",
+        "id": 1014252742733426700,
+        "id_str": "1014252742733426688",
+        "full_text": "Build partnerships. #Office365 features Skype for Business to enhance collaboration--and develop stronger bonds--among up to 250 participants. https://t.co/XD7po8EdB3 https://t.co/F3jz4ZZKgq",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          166
+        ],
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Office365",
+              "indices": [
+                20,
+                30
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/XD7po8EdB3",
+              "expanded_url": "http://stuf.in/bjayt",
+              "display_url": "stuf.in/bjayt",
+              "indices": [
+                143,
+                166
+              ]
+            }
+          ],
+          "media": [
+            {
+              "id": 1014252741462511600,
+              "id_str": "1014252741462511616",
+              "indices": [
+                167,
+                190
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNZfp9W0AAumE9.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNZfp9W0AAumE9.jpg",
+              "url": "https://t.co/F3jz4ZZKgq",
+              "display_url": "pic.twitter.com/F3jz4ZZKgq",
+              "expanded_url": "https://twitter.com/rstricks/status/1014252742733426688/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "large": {
+                  "w": 600,
+                  "h": 399,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 600,
+                  "h": 399,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 600,
+                  "h": 399,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 1014252741462511600,
+              "id_str": "1014252741462511616",
+              "indices": [
+                167,
+                190
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNZfp9W0AAumE9.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNZfp9W0AAumE9.jpg",
+              "url": "https://t.co/F3jz4ZZKgq",
+              "display_url": "pic.twitter.com/F3jz4ZZKgq",
+              "expanded_url": "https://twitter.com/rstricks/status/1014252742733426688/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "large": {
+                  "w": 600,
+                  "h": 399,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 600,
+                  "h": 399,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 600,
+                  "h": 399,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"http://www.contentmx.com\" rel=\"nofollow\">ContentMX</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 391735234,
+          "id_str": "391735234",
+          "name": "Robert Strickland",
+          "screen_name": "rstricks",
+          "location": "",
+          "description": "",
+          "url": null,
+          "entities": {
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 14,
+          "friends_count": 30,
+          "listed_count": 0,
+          "created_at": "Sun Oct 16 01:19:05 +0000 2011",
+          "favourites_count": 1,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 30,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "C0DEED",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+          "profile_image_url_https": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+          "profile_link_color": "1DA1F2",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": true,
+          "default_profile_image": true,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "from": {
+        "displayName": "Robert Strickland",
+        "account": "rstricks",
+        "image": "https://abs.twimg.com/sticky/default_profile_images/default_profile_normal.png",
+        "description": "",
+        "url": null,
+        "followersCount": 14,
+        "isVerified": false
+      },
+      "parent": null,
+      "isReply": false,
+      "isOriginal": true,
+      "message": "Build partnerships. #Office365 features Skype for Business to enhance collaboration--and develop stronger bonds--among up to 250 participants. https://t.co/XD7po8EdB3 https://t.co/F3jz4ZZKgq",
+      "time": "Tue Jul 03 21:01:12 +0000 2018",
+      "workflow": {
+        "_id": "40c2fb59-900b-4e2f-9336-cc0db28aafd9"
+      }
+    },
+    {
+      "_id": "twitter:1014252660441133056",
+      "provider": "twitter",
+      "raw": {
+        "created_at": "Tue Jul 03 21:00:52 +0000 2018",
+        "id": 1014252660441133000,
+        "id_str": "1014252660441133056",
+        "full_text": "#Office365: One License, Five Devices https://t.co/B3t1i5Cymd",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          37
+        ],
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Office365",
+              "indices": [
+                0,
+                10
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [],
+          "media": [
+            {
+              "id": 1014252659082133500,
+              "id_str": "1014252659082133505",
+              "indices": [
+                38,
+                61
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNZa3EWAAEAaR3.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNZa3EWAAEAaR3.jpg",
+              "url": "https://t.co/B3t1i5Cymd",
+              "display_url": "pic.twitter.com/B3t1i5Cymd",
+              "expanded_url": "https://twitter.com/CMITVaBeach/status/1014252660441133056/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "small": {
+                  "w": 453,
+                  "h": 680,
+                  "resize": "fit"
+                },
+                "large": {
+                  "w": 864,
+                  "h": 1296,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 800,
+                  "h": 1200,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 1014252659082133500,
+              "id_str": "1014252659082133505",
+              "indices": [
+                38,
+                61
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNZa3EWAAEAaR3.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNZa3EWAAEAaR3.jpg",
+              "url": "https://t.co/B3t1i5Cymd",
+              "display_url": "pic.twitter.com/B3t1i5Cymd",
+              "expanded_url": "https://twitter.com/CMITVaBeach/status/1014252660441133056/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "small": {
+                  "w": 453,
+                  "h": 680,
+                  "resize": "fit"
+                },
+                "large": {
+                  "w": 864,
+                  "h": 1296,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 800,
+                  "h": 1200,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"http://www.contentmx.com\" rel=\"nofollow\">ContentMX</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 722489069532414000,
+          "id_str": "722489069532413953",
+          "name": "CMIT Solutions",
+          "screen_name": "CMITVaBeach",
+          "location": "Virginia Beach, VA",
+          "description": "We worry about IT, so you don't have to  💼 Business IT Specialists\n#YourLocalExperts |\nWe ❤️ #SMBs",
+          "url": "https://t.co/t32Zh3gPwi",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https://t.co/t32Zh3gPwi",
+                  "expanded_url": "http://cmitsolutions.com/virginia-beach-metro",
+                  "display_url": "cmitsolutions.com/virginia-beach…",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 73,
+          "friends_count": 96,
+          "listed_count": 1,
+          "created_at": "Tue Apr 19 18:16:32 +0000 2016",
+          "favourites_count": 1417,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 667,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "000000",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/865216010906853378/5ZGG_yix_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/865216010906853378/5ZGG_yix_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/722489069532413953/1506002128",
+          "profile_link_color": "37A4A3",
+          "profile_sidebar_border_color": "000000",
+          "profile_sidebar_fill_color": "000000",
+          "profile_text_color": "000000",
+          "profile_use_background_image": false,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "from": {
+        "displayName": "CMIT Solutions",
+        "account": "CMITVaBeach",
+        "image": "https://pbs.twimg.com/profile_images/865216010906853378/5ZGG_yix_normal.jpg",
+        "description": "We worry about IT, so you don't have to  💼 Business IT Specialists\n#YourLocalExperts |\nWe ❤️ #SMBs",
+        "url": "https://t.co/t32Zh3gPwi",
+        "followersCount": 73,
+        "isVerified": false
+      },
+      "parent": null,
+      "isReply": false,
+      "isOriginal": true,
+      "message": "#Office365: One License, Five Devices https://t.co/B3t1i5Cymd",
+      "time": "Tue Jul 03 21:00:52 +0000 2018",
+      "workflow": {
+        "_id": "40c2fb59-900b-4e2f-9336-cc0db28aafd9"
+      }
+    },
+    {
+      "_id": "twitter:1014252653566681088",
+      "provider": "twitter",
+      "raw": {
+        "created_at": "Tue Jul 03 21:00:51 +0000 2018",
+        "id": 1014252653566681100,
+        "id_str": "1014252653566681088",
+        "full_text": "Recurring tasks can be draining and time consuming. Automate processes with #Office365 and get back to being productive. https://t.co/v0kHnO6WZ1 https://t.co/qSHkYTTmDN",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          144
+        ],
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Office365",
+              "indices": [
+                76,
+                86
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/v0kHnO6WZ1",
+              "expanded_url": "http://stuf.in/bjayn",
+              "display_url": "stuf.in/bjayn",
+              "indices": [
+                121,
+                144
+              ]
+            }
+          ],
+          "media": [
+            {
+              "id": 1014252652023177200,
+              "id_str": "1014252652023177217",
+              "indices": [
+                145,
+                168
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNZacxW4AE0yUI.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNZacxW4AE0yUI.jpg",
+              "url": "https://t.co/qSHkYTTmDN",
+              "display_url": "pic.twitter.com/qSHkYTTmDN",
+              "expanded_url": "https://twitter.com/SynergoGroup/status/1014252653566681088/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium": {
+                  "w": 600,
+                  "h": 338,
+                  "resize": "fit"
+                },
+                "large": {
+                  "w": 600,
+                  "h": 338,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 600,
+                  "h": 338,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 1014252652023177200,
+              "id_str": "1014252652023177217",
+              "indices": [
+                145,
+                168
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNZacxW4AE0yUI.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNZacxW4AE0yUI.jpg",
+              "url": "https://t.co/qSHkYTTmDN",
+              "display_url": "pic.twitter.com/qSHkYTTmDN",
+              "expanded_url": "https://twitter.com/SynergoGroup/status/1014252653566681088/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "medium": {
+                  "w": 600,
+                  "h": 338,
+                  "resize": "fit"
+                },
+                "large": {
+                  "w": 600,
+                  "h": 338,
+                  "resize": "fit"
+                },
+                "small": {
+                  "w": 600,
+                  "h": 338,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"http://www.contentmx.com\" rel=\"nofollow\">ContentMX</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 728551287399305200,
+          "id_str": "728551287399305216",
+          "name": "Synergo Group",
+          "screen_name": "SynergoGroup",
+          "location": "Toronto, Ontario",
+          "description": "#Mobile & #Web #App #Development #Toronto Helping #Startups, #Agency & #Enterprise turn great #App #Ideas into reality #AI #MachineLearning #IoT",
+          "url": "https://t.co/Iy8J5Q8huD",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https://t.co/Iy8J5Q8huD",
+                  "expanded_url": "http://bit.ly/2mwrsVj",
+                  "display_url": "bit.ly/2mwrsVj",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 1222,
+          "friends_count": 1082,
+          "listed_count": 19,
+          "created_at": "Fri May 06 11:45:37 +0000 2016",
+          "favourites_count": 3108,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 6959,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "000000",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/728558100760940545/1e0kdPC7_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/728558100760940545/1e0kdPC7_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/728551287399305216/1489678230",
+          "profile_link_color": "1B95E0",
+          "profile_sidebar_border_color": "000000",
+          "profile_sidebar_fill_color": "000000",
+          "profile_text_color": "000000",
+          "profile_use_background_image": false,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": false,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "from": {
+        "displayName": "Synergo Group",
+        "account": "SynergoGroup",
+        "image": "https://pbs.twimg.com/profile_images/728558100760940545/1e0kdPC7_normal.jpg",
+        "description": "#Mobile & #Web #App #Development #Toronto Helping #Startups, #Agency & #Enterprise turn great #App #Ideas into reality #AI #MachineLearning #IoT",
+        "url": "https://t.co/Iy8J5Q8huD",
+        "followersCount": 1222,
+        "isVerified": false
+      },
+      "parent": null,
+      "isReply": false,
+      "isOriginal": true,
+      "message": "Recurring tasks can be draining and time consuming. Automate processes with #Office365 and get back to being productive. https://t.co/v0kHnO6WZ1 https://t.co/qSHkYTTmDN",
+      "time": "Tue Jul 03 21:00:51 +0000 2018",
+      "workflow": {
+        "_id": "40c2fb59-900b-4e2f-9336-cc0db28aafd9"
+      }
+    },
+    {
+      "_id": "twitter:1014252620926652417",
+      "provider": "twitter",
+      "raw": {
+        "created_at": "Tue Jul 03 21:00:43 +0000 2018",
+        "id": 1014252620926652400,
+        "id_str": "1014252620926652417",
+        "full_text": "Want to see 5 common #Office365 licenses that our customers typically ask for, and the #Apps and services that are included with them? Check out this blog post, where we’ve included a handy chart that compares them: https://t.co/NuGBPWEymY https://t.co/IsazOrSapX",
+        "truncated": false,
+        "display_text_range": [
+          0,
+          239
+        ],
+        "entities": {
+          "hashtags": [
+            {
+              "text": "Office365",
+              "indices": [
+                21,
+                31
+              ]
+            },
+            {
+              "text": "Apps",
+              "indices": [
+                87,
+                92
+              ]
+            }
+          ],
+          "symbols": [],
+          "user_mentions": [],
+          "urls": [
+            {
+              "url": "https://t.co/NuGBPWEymY",
+              "expanded_url": "http://ow.ly/c5Mc30kLQoD",
+              "display_url": "ow.ly/c5Mc30kLQoD",
+              "indices": [
+                216,
+                239
+              ]
+            }
+          ],
+          "media": [
+            {
+              "id": 1014252619030782000,
+              "id_str": "1014252619030781955",
+              "indices": [
+                240,
+                263
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNZYh3W4AM7JKU.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNZYh3W4AM7JKU.jpg",
+              "url": "https://t.co/IsazOrSapX",
+              "display_url": "pic.twitter.com/IsazOrSapX",
+              "expanded_url": "https://twitter.com/ProServeIT/status/1014252620926652417/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "small": {
+                  "w": 680,
+                  "h": 340,
+                  "resize": "fit"
+                },
+                "large": {
+                  "w": 1024,
+                  "h": 512,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 1024,
+                  "h": 512,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "extended_entities": {
+          "media": [
+            {
+              "id": 1014252619030782000,
+              "id_str": "1014252619030781955",
+              "indices": [
+                240,
+                263
+              ],
+              "media_url": "http://pbs.twimg.com/media/DhNZYh3W4AM7JKU.jpg",
+              "media_url_https": "https://pbs.twimg.com/media/DhNZYh3W4AM7JKU.jpg",
+              "url": "https://t.co/IsazOrSapX",
+              "display_url": "pic.twitter.com/IsazOrSapX",
+              "expanded_url": "https://twitter.com/ProServeIT/status/1014252620926652417/photo/1",
+              "type": "photo",
+              "sizes": {
+                "thumb": {
+                  "w": 150,
+                  "h": 150,
+                  "resize": "crop"
+                },
+                "small": {
+                  "w": 680,
+                  "h": 340,
+                  "resize": "fit"
+                },
+                "large": {
+                  "w": 1024,
+                  "h": 512,
+                  "resize": "fit"
+                },
+                "medium": {
+                  "w": 1024,
+                  "h": 512,
+                  "resize": "fit"
+                }
+              }
+            }
+          ]
+        },
+        "metadata": {
+          "iso_language_code": "en",
+          "result_type": "recent"
+        },
+        "source": "<a href=\"https://www.hootsuite.com\" rel=\"nofollow\">Hootsuite Inc.</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+          "id": 208259443,
+          "id_str": "208259443",
+          "name": "ProServeIT",
+          "screen_name": "ProServeIT",
+          "location": "Mississauga, Ontario, Canada",
+          "description": "Multi-award winning Microsoft Gold Partner, specialized in #Cloud Migration, #WebDevelopment, #ITManagedServices",
+          "url": "https://t.co/YEsQlIVIpC",
+          "entities": {
+            "url": {
+              "urls": [
+                {
+                  "url": "https://t.co/YEsQlIVIpC",
+                  "expanded_url": "http://www.ProServeIT.com",
+                  "display_url": "ProServeIT.com",
+                  "indices": [
+                    0,
+                    23
+                  ]
+                }
+              ]
+            },
+            "description": {
+              "urls": []
+            }
+          },
+          "protected": false,
+          "followers_count": 422,
+          "friends_count": 519,
+          "listed_count": 66,
+          "created_at": "Tue Oct 26 23:28:09 +0000 2010",
+          "favourites_count": 216,
+          "utc_offset": null,
+          "time_zone": null,
+          "geo_enabled": false,
+          "verified": false,
+          "statuses_count": 2151,
+          "lang": "en",
+          "contributors_enabled": false,
+          "is_translator": false,
+          "is_translation_enabled": false,
+          "profile_background_color": "A10304",
+          "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+          "profile_background_tile": false,
+          "profile_image_url": "http://pbs.twimg.com/profile_images/758320725300277248/2hX7QP_9_normal.jpg",
+          "profile_image_url_https": "https://pbs.twimg.com/profile_images/758320725300277248/2hX7QP_9_normal.jpg",
+          "profile_banner_url": "https://pbs.twimg.com/profile_banners/208259443/1478025222",
+          "profile_link_color": "E31B23",
+          "profile_sidebar_border_color": "C0DEED",
+          "profile_sidebar_fill_color": "DDEEF6",
+          "profile_text_color": "333333",
+          "profile_use_background_image": true,
+          "has_extended_profile": false,
+          "default_profile": false,
+          "default_profile_image": false,
+          "following": true,
+          "follow_request_sent": false,
+          "notifications": false,
+          "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+      },
+      "from": {
+        "displayName": "ProServeIT",
+        "account": "ProServeIT",
+        "image": "https://pbs.twimg.com/profile_images/758320725300277248/2hX7QP_9_normal.jpg",
+        "description": "Multi-award winning Microsoft Gold Partner, specialized in #Cloud Migration, #WebDevelopment, #ITManagedServices",
+        "url": "https://t.co/YEsQlIVIpC",
+        "followersCount": 422,
+        "isVerified": false
+      },
+      "parent": null,
+      "isReply": false,
+      "isOriginal": true,
+      "message": "Want to see 5 common #Office365 licenses that our customers typically ask for, and the #Apps and services that are included with them? Check out this blog post, where we’ve included a handy chart that compares them: https://t.co/NuGBPWEymY https://t.co/IsazOrSapX",
+      "time": "Tue Jul 03 21:00:43 +0000 2018",
+      "workflow": {
+        "_id": "40c2fb59-900b-4e2f-9336-cc0db28aafd9"
+      }
+    }
+  ]
+]
