@@ -32,11 +32,27 @@ class WorkflowEditFiltersCard extends React.Component {
         <div>
           <label>Quality</label>
           <div>
-            <select name="quality" onChange={this.handleChange.bind(this)} value={workflow.filters.quality}>
-              <option value='none'>None</option>
-              <option value='low'>Low</option>
-              <option value='medium'>Medium</option>
+            <select name="resultType" onChange={this.handleChange.bind(this)} value={workflow.filters.quality}>
+              <option value='recent'>Recent</option>
+              <option value='popular'>Popular</option>
+              <option value='mixed'>Mixed</option>
             </select>
+          </div>
+        </div>
+        <div>
+          <label>Only From People with more than followers</label>
+          <div>
+            <input name="fromPopularity" type="number" placeholder="X Followers"
+              value={workflow.filters.fromPopularity}
+              onChange={this.handleChange.bind(this)} />
+          </div>
+        </div>
+        <div>
+          <label>Include Retweets</label>
+          <div>
+            <input name="includeShares" type="checkbox" placeholder="Include Retweets"
+              value={workflow.filters.includeShares}
+              onChange={this.handleChange.bind(this)} />
           </div>
         </div>
       </div>

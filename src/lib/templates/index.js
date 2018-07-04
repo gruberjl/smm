@@ -26,7 +26,9 @@ const workflow = () => ({
   filters: {
     language: 'en',
     search: '',
-    quality: 'low'
+    resultType: 'recent',
+    fromPopularity: 0,
+    includeShares: false
   }
 })
 
