@@ -7,18 +7,11 @@ const {BrowserRouter} = require('react-router-dom')
 require('./lib/db')
 
 class App extends React.Component {
-  constructor() {
-    super()
-    this.state = {
-      messages: [],
-    }
-  }
-
   render() {
     return (
       <Provider store={store}>
         <BrowserRouter>
-          <AppRoot {...this.props} {...this.state}/>
+          <AppRoot />
         </BrowserRouter>
       </Provider>
     )
