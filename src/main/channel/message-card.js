@@ -3,6 +3,10 @@ const React = require('react')
 const MessageCard = ({message}) => (
   <div className="card message-card stack margins padding">
     <header className="message-card-header">
+      <div>
+        <span>workflow: </span>
+        <span>{message.workflow.name}</span>
+      </div>
       <div className="message-from-image-container">
         <img className="message-from-image" src={message.from.image} />
         <img className="message-from-platform" src="/assets/fa/advanced-options/raw-svg/brands/twitter.svg"/>
