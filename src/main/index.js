@@ -1,5 +1,5 @@
 const React = require('react')
-const {Channel} = require('./channel.js')
+const {Channel} = require('./channel')
 const {Workflows} = require('./workflows/index.js')
 const {Channels} = require('./channels/index.js')
 const {Connectors} = require('./connectors/index.js')
