@@ -1,4 +1,4 @@
-const workspace = (oldState={docs:[], channels:[], workflows:[], connectors:[]}, action) => {
+const workspace = (oldState={docs:[], channels:[], workflows:[], connectors:[], loaded:false}, action) => {
   let docs
 
   if (action.type=='SET_WORKSPACE') {
@@ -22,7 +22,7 @@ const workspace = (oldState={docs:[], channels:[], workflows:[], connectors:[]},
     const channels = docs.filter((doc) => doc.docType=='channel')
     const workflows = docs.filter((doc) => doc.docType=='workflow')
     const connectors = docs.filter((doc) => doc.docType=='connector')
-    const state = {docs, channels, workflows, connectors}
+    const state = {docs, channels, workflows, connectors, loaded:true}
     return state
   }
 
