@@ -1,5 +1,6 @@
 const React = require('react')
 const {connect} = require('react-redux')
+const {withRouter} = require('react-router-dom')
 const {Header} = require('./header.js')
 const {LeftNav} = require('./left-nav.js')
 const {Main} = require('./main/index.js')
@@ -23,4 +24,4 @@ const AppRoot = ({loaded}) => {
 
 const mapStateToProps = (state) => ({loaded: state.workspace.loaded})
 
-module.exports = {AppRoot: connect(mapStateToProps)(AppRoot)}
+module.exports = {AppRoot: withRouter(connect(mapStateToProps)(AppRoot))}
