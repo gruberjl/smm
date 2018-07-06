@@ -1,0 +1,311 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN_r8OUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UNirkOUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhp.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+* {
+  box-sizing: border-box
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+em {
+  font-weight: 300;
+}
+
+table {
+  border: 1px solid rgba(0,0,0,.1);
+  border-collapse: collapse;
+  table-layout: fixed;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+td p {
+  margin: 0px;
+}
+
+td {
+  padding: 12px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+pre {
+  max-width: 90vw;
+}
+
+blockquote {
+  font-size: larger;
+  font-weight: 300;
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+}
+
+a.no-style {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul.scatter {
+  list-style-type: none;
+}
+
+ul.scatter li {
+    display: inline-block;
+    min-width: 50%;
+    padding: 12px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.fw600 {
+  font-weight: 600;
+}
+
+.w300 {
+  width: 300px;
+}
+
+.margins {
+  margin: 12px;
+}
+
+.side-margins {
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.stack-margins2 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.padding {
+  padding: 12px;
+}
+
+.side-padding {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.left-padding {
+  padding-left: 12px;
+}
+
+.hide-overflow {
+  overflow: hidden;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+.space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+}
+
+.columnar {
+  display: flex;
+  flex-direction: row;
+}
+
+.columnar > * {
+  flex: 1;
+}
+
+@media screen and (max-width: 899px) {
+  .sm-stack {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.nav-top {
+  background-color: white;
+  width:100%;
+  height:60px;
+  line-height: 60px;
+  border-bottom: 1px solid #666;
+}
+
+.nav-top a {
+  text-decoration: none;
+  color: black;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+#app-body {
+  height: calc(100vh - 61px);
+  display: flex;
+  align-items: stretch;
+}
+
+#app-root {
+  width:100%;
+}
+
+aside#left-nav {
+  width: 300px;
+  border-right: 1px solid #666;
+  font-size: 16px;
+  overflow-y: auto;
+}
+
+.main-container {
+  flex: 1;
+  overflow-y: scroll;
+  background: rgba(1,1,1,.03);
+}
+
+main {
+
+}
+
+main#messages-container {
+
+}
+
+.card {
+  background: white;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 4px;
+}
+
+.card.link {
+  cursor: pointer;
+}
+
+.message-card {
+
+}
+
+.message-card-header {
+  line-height: 1
+}
+
+.message-from-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.message-from-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.message-from-platform {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.message-display-name {
+
+}
+
+.message-from-account {
+
+}
+
+.message-text {
+
+}
+
+.message-action-container {
+  margin-top: 12px;
+}
+
+.message-action {
+  height: 40px;
+  background: white;
+  border: none;
+  line-height: 15px;
+  font-size: 15px;
+}
+
+.message-action-icon {
+  height: 15px;
+  margin-right: 8px;
+}
