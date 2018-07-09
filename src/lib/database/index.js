@@ -1,4 +1,10 @@
-const {allDocs} = require('./all-docs')
-const {watchDb} = require('./watch-db')
+const {allDocs, watchDb, put, bulkDocs} = require('../../../lib/database/index.js')
 
-module.exports = {allDocs, watchDb}
+const serverPath = 'http://10.0.75.1:5984/'
+
+module.exports = {
+  allDocs: allDocs(serverPath),
+  watchDb: watchDb(serverPath),
+  put: put(serverPath),
+  bulkDocs: bulkDocs(serverPath)
+}

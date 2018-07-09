@@ -31,6 +31,7 @@
     "flat": "^4.0.0",
     "glob": "^7.1.2",
     "ioredis": "^3.2.2",
+    "is-browser": "^2.0.1",
     "mongo-dot-notation": "^1.2.0",
     "passport": "^0.4.0",
     "passport-twitter": "^1.0.4",

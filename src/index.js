@@ -4,7 +4,6 @@ const {Provider} = require('react-redux')
 const {store} = require('./lib/store')
 const {AppRoot} = require('./app-root.js')
 const {BrowserRouter} = require('react-router-dom')
-require('./lib/db')
 
 class App extends React.Component {
   render() {
