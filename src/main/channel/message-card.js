@@ -1,19 +1,19 @@
 const React = require('react')
 
-const MessageCard = ({message}) => (
+const MessageCard = ({doc}) => (
   <div className="card message-card stack margins padding">
     <header className="message-card-header">
       <div>
         <span>workflow: </span>
-        <span>{message.workflow.name}</span>
+        <span>{doc.workflow.name}</span>
       </div>
       <div className="message-from-image-container">
-        <img className="message-from-image" src={message.from.image} />
+        <img className="message-from-image" src={doc.from.image} />
         <img className="message-from-platform" src="/assets/fa/advanced-options/raw-svg/brands/twitter.svg"/>
       </div>
-      <span className="message-from-display-name fw600 side-margins">{message.from.displayName}</span>
+      <span className="message-from-display-name fw600 side-margins">{doc.from.displayName}</span>
     </header>
-    <div className="message-text">{message.message}</div>
+    <div className="message-text">{doc.message}</div>
     <footer>
       <div className="message-action-container">
         <button className="message-action">
