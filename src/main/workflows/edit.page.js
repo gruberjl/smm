@@ -1,6 +1,6 @@
 const React = require('react')
 const {connect} = require('react-redux')
-const {api} = require('../../lib/index.js')
+const {put} = require('../../lib/database')
 const {WorkflowEditCard} = require('./edit-card.js')
 const {WorkflowEditConnectorCard} = require('./edit-connector-card.js')
 const {WorkflowEditFiltersCard} = require('./edit-filters-card.js')
@@ -22,15 +22,17 @@ class Component extends React.Component {
   }
 
   saveWorkflow() {
-    api.workspaces.saveItem('workspace1', this.state.workflow, 'workflows')
+    put('workspace1', this.state.workflow).then(res => {
+      console.log(res)
+    })
   }
 
   deleteWorkflow() {
-    api.workspaces.deleteItem('workspace1', this.state.workflow, 'workflows')
-      .then((res) => {
-        if (res.status)
-          this.props.history.push('/workflows')
-      })
+    const workflow = Object.assign({}, this.state.workflow, {_deleted: true})
+    put('workspace1', workflow).then(res => {
+      console.log(res)
+      this.props.history.push('/workflows')
+    })
   }
 
   render() {
