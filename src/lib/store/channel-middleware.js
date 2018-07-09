@@ -17,7 +17,7 @@ const addChannel = (store, channel) => {
 
 const startChannels = (store, channels) => {
   const activeChannelIds = activeChannels.map(c => c._id)
-  const newChannels = channels.filter(channel => !activeChannelIds.includes(channel._id))
+  const newChannels = channels.filter(channel => !activeChannelIds.includes(channel._id) && channel.dbName)
   newChannels.forEach(channel => addChannel(store, channel))
 }
 

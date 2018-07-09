@@ -1,7 +1,7 @@
 const React = require('react')
 const {connect} = require('react-redux')
 const {withRouter} = require('react-router-dom')
-const {api} = require('../../lib/index.js')
+const {put} = require('../../lib/database')
 const {ChannelEditCard} = require('./edit-card.js')
 const templates = require('../../lib/templates')
 
@@ -19,16 +19,17 @@ class Component extends React.Component {
   }
 
   saveChannel() {
-    api.workspaces.saveItem('workspace1', this.state.channel, 'channels')
+    put('workspace1', this.state.channel).then(res => {
+      console.log(res)
+    })
   }
 
   deleteChannel() {
-    api.workspaces
-      .deleteItem('workspace1', this.state.channel, 'channels')
-      .then((res) => {
-        if (res.status)
-          this.props.history.push('/channels')
-      })
+    const channel = Object.assign({}, this.state.channel, {_deleted: true})
+    put('workspace1', channel).then(res => {
+      console.log(res)
+      this.props.history.push('/channels')
+    })
   }
 
   render() {
