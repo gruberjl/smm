@@ -3,7 +3,7 @@ const channel = (oldState={}, action) => {
     const state = Object.assign({}, oldState)
     const channels = action.docs.filter((doc) => doc.docType=='channel')
     channels.forEach(channel => {
-      if (!state[channel.dbName]) state[channel.dbName] = []
+      if (!state[channel.dbName]) state[channel.dbName] = {docs:[]}
     })
     return state
   }
