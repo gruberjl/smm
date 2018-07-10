@@ -1,4 +1,5 @@
 const React = require('react')
+const moment = require('moment')
 
 const MessageCard = ({doc}) => (
   <div className="card message-card stack margins padding">
@@ -12,6 +13,7 @@ const MessageCard = ({doc}) => (
         <img className="message-from-platform" src="/assets/fa/advanced-options/raw-svg/brands/twitter.svg"/>
       </div>
       <span className="message-from-display-name fw600 side-margins">{doc.from.displayName}</span>
+      <span className="light" title={doc.time}>{moment(doc.time).fromNow()}</span>
     </header>
     <div className="message-text">{doc.message}</div>
     <footer>
