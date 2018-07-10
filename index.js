@@ -1,5 +1,6 @@
 const debug = require('debug')
 debug.enable('api-v2')
+debug.enable('social*')
 require('./lib/express')
 require('./lib/social')
 require('./lib/workspace-manager')

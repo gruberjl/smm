@@ -22,7 +22,7 @@ const workflow = () => ({
   name: '',
   connector: '',
   channel: '',
-  action: '',
+  action: 'search',
   filters: {
     language: 'en',
     search: '',
