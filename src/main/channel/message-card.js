@@ -21,6 +21,7 @@ const MessageCard = ({doc}) => (
         <button className="message-action">
           <img className="message-action-icon" src="/assets/fa/advanced-options/raw-svg/solid/thumbs-up.svg"/>
           <span className="message-action-text">Like</span>
+          <span className="light side-margins">{doc.favoriteCount}</span>
         </button>
         <button className="message-action side-margins">
           <img className="message-action-icon" src="/assets/fa/advanced-options/raw-svg/solid/comment.svg"/>
@@ -29,6 +30,7 @@ const MessageCard = ({doc}) => (
         <button className="message-action">
           <img className="message-action-icon" src="/assets/fa/advanced-options/raw-svg/solid/share.svg"/>
           <span className="message-action-text">Share</span>
+          <span className="light side-margins">{doc.shareCount}</span>
         </button>
       </div>
     </footer>
