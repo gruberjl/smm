@@ -1,7 +1,7 @@
 const React = require('react')
 const {connect} = require('react-redux')
 const {withRouter} = require('react-router-dom')
-const {api} = require('../../lib/index.js')
+const {put} = require('../../lib/database')
 const {ConnectorEditCard} = require('./edit-card.js')
 const {ConnectorNewCard} = require('./new-card.js')
 const templates = require('../../lib/templates')
@@ -20,15 +20,17 @@ class Component extends React.Component {
   }
 
   saveConnector() {
-    api.workspaces.saveItem(this.props.workspace._id, this.state.connector, 'connectors')
+    put('workspace1', this.state.connector).then(res => {
+      console.log(res)
+    })
   }
 
   deleteConnector() {
-    api.workspaces.deleteItem(this.props.workspace._id, this.state.connector, 'connectors')
-      .then((res) => {
-        if (res.status)
-          this.props.history.push('/connectors')
-      })
+    const connector = Object.assign({}, this.state.connector, {_deleted: true})
+    put('workspace1', connector).then(res => {
+      console.log(res)
+      this.props.history.push('/connectors')
+    })
   }
 
   render() {
