@@ -37,7 +37,8 @@ const interactions = () => ({
   provider: '',
   providerId: '',
   messageId: '',
-  docType: ''
+  docType: '',
+  connector: {_id:''}
 })
 
 module.exports = {channel, connector, workflow, interactions}

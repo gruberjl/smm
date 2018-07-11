@@ -1,14 +1,16 @@
 const React = require('react')
+const {connect} = require('react-redux')
 const {put} = require('../../lib/database')
 const templates = require('../../lib/templates')
 
-class LikeButton extends React.Component {
+class Component extends React.Component {
   toggleLike() {
     const interaction = Object.assign(templates.interactions(), {
       provider: 'twitter',
       providerId: this.props.providerId,
       messageId: this.props.messageId,
-      docType: 'like'
+      docType: 'like',
+      connector: {_id: this.props.connectors[0]._id}
     })
 
     put('interactions1', interaction)
@@ -24,5 +26,9 @@ class LikeButton extends React.Component {
     )
   }
 }
+
+const mapStateToProps = (state) => ({connectors: state.workspace.connectors})
+
+const LikeButton = connect(mapStateToProps)(Component)
 
 module.exports = {LikeButton}
