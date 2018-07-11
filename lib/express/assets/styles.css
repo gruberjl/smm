@@ -52,6 +52,10 @@ em {
   font-weight: 300;
 }
 
+button:hover {
+  cursor:pointer;
+}
+
 table {
   border: 1px solid rgba(0,0,0,.1);
   border-collapse: collapse;

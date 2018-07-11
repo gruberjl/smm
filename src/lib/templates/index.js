@@ -32,4 +32,12 @@ const workflow = () => ({
   }
 })
 
-module.exports = {channel, connector, workflow}
+const interactions = () => ({
+  _id: uuid(),
+  provider: '',
+  providerId: '',
+  messageId: '',
+  docType: ''
+})
+
+module.exports = {channel, connector, workflow, interactions}

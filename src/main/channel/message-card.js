@@ -1,5 +1,8 @@
 const React = require('react')
 const moment = require('moment')
+const {LikeButton} = require('./button-like')
+const {CommentButton} = require('./button-comment')
+const {ShareButton} = require('./button-share')
 
 const MessageCard = ({doc}) => (
   <div className="card message-card stack margins padding">
@@ -18,20 +21,9 @@ const MessageCard = ({doc}) => (
     <div className="message-text">{doc.message}</div>
     <footer>
       <div className="message-action-container">
-        <button className="message-action">
-          <img className="message-action-icon" src="/assets/fa/advanced-options/raw-svg/solid/thumbs-up.svg"/>
-          <span className="message-action-text">Like</span>
-          <span className="light side-margins">{doc.favoriteCount}</span>
-        </button>
-        <button className="message-action side-margins">
-          <img className="message-action-icon" src="/assets/fa/advanced-options/raw-svg/solid/comment.svg"/>
-          <span className="message-action-text">Comment</span>
-        </button>
-        <button className="message-action">
-          <img className="message-action-icon" src="/assets/fa/advanced-options/raw-svg/solid/share.svg"/>
-          <span className="message-action-text">Share</span>
-          <span className="light side-margins">{doc.shareCount}</span>
-        </button>
+        <LikeButton favoriteCount={doc.favoriteCount} providerId={doc.providerId} messageId={doc._id}/>
+        <CommentButton />
+        <ShareButton shareCount={doc.shareCount}/>
       </div>
     </footer>
   </div>
