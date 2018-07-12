@@ -11,7 +11,7 @@ const channel = (oldState={}, action) => {
     return state
   }
 
-  if (action.type=='CHANNEL_DIFF') {
+  if (action.type=='CHANNEL_CHANGE') {
     const state = Object.assign({}, oldState)
     const channel = action.channel
     const docs = action.docs.map(doc => {

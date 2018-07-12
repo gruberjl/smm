@@ -6,8 +6,8 @@ const startChannel = (store, channel) => {
   if (channel.dbName && !activeChannels.has(channel._id)) {
     const emitter = watchDb(channel.dbName)
 
-    emitter.on('diff', docs => {
-      const action = {type:'CHANNEL_DIFF', docs, channel}
+    emitter.on('change', docs => {
+      const action = {type:'CHANNEL_CHANGE', docs, channel}
       store.dispatch(action)
     })
 
