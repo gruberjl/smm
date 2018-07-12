@@ -102,6 +102,10 @@ ul.scatter li {
     padding: 12px;
 }
 
+.color-success {
+  color:green;
+}
+
 .text-center {
   text-align: center;
 }
