@@ -18,7 +18,7 @@ const channel = (oldState={}, action) => {
       doc.workflow = workflows.find(w => w._id == doc.workflow._id)
       return doc
     })
-    state[channel.dbName].docs = [].concat(state[channel.dbName].docs, docs)
+    state[channel.dbName].docs = docs
     return state
   }
 
