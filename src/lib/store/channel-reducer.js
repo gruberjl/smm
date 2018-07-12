@@ -11,14 +11,14 @@ const channel = (oldState={}, action) => {
     return state
   }
 
-  if (action.type=='CHANNEL_CHANGE') {
+  if (action.type=='CHANNEL_DIFF') {
     const state = Object.assign({}, oldState)
     const channel = action.channel
     const docs = action.docs.map(doc => {
       doc.workflow = workflows.find(w => w._id == doc.workflow._id)
       return doc
     })
-    state[channel.dbName].docs = docs
+    state[channel.dbName].docs = [].concat(state[channel.dbName].docs, docs)
     return state
   }
 

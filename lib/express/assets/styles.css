@@ -102,8 +102,9 @@ ul.scatter li {
     padding: 12px;
 }
 
-.color-success {
-  color:green;
+.message-action.bg-color-success {
+  background:green;
+  color:white;
 }
 
 .text-center {

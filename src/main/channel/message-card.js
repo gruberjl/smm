@@ -21,7 +21,7 @@ const MessageCard = ({doc}) => (
     <div className="message-text">{doc.message}</div>
     <footer>
       <div className="message-action-container">
-        <LikeButton favoriteCount={doc.favoriteCount} providerId={doc.providerId} messageId={doc._id}/>
+        <LikeButton likeCount={doc.likeCount} providerId={doc.providerId} messageId={doc._id} liked={doc.liked}/>
         <CommentButton />
         <ShareButton shareCount={doc.shareCount}/>
       </div>

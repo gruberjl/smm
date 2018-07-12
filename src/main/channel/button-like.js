@@ -17,21 +17,19 @@ class Component extends React.Component {
   }
 
   render() {
-    console.log(this.props.interactions)
-    const buttonColor = this.props.interactions.length>0 ? 'color-success' : ''
+    const buttonColor = this.props.liked.length>0 ? ' bg-color-success' : ''
     return (
-      <button className={'message-action ' + buttonColor} onClick={this.toggleLike.bind(this)}>
+      <button className={'message-action' + buttonColor} onClick={this.toggleLike.bind(this)}>
         <img className="message-action-icon" src="/assets/fa/advanced-options/raw-svg/solid/thumbs-up.svg"/>
         <span className="message-action-text">Like</span>
-        <span className="light side-margins">{this.props.favoriteCount}</span>
+        <span className="light side-margins">{this.props.likeCount}</span>
       </button>
     )
   }
 }
 
-const mapStateToProps = (state, props) => ({
-  connectors: state.workspace.connectors,
-  interactions: state.interactions.filter(i => i.messageId == props.messageId)
+const mapStateToProps = (state) => ({
+  connectors: state.workspace.connectors
 })
 
 const LikeButton = connect(mapStateToProps)(Component)
