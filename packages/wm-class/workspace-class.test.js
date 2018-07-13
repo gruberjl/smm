@@ -96,14 +96,6 @@ describe('Workspace', () => {
     })
   })
 
-  describe('getConnectorDoc', () => {
-    test('should return connector', () => {
-      const w = new Workspace(workspaceDoc())
-      w.docs.push({docType:'connector', _id:'a'})
-      expect(w.getConnectorDoc()).toEqual({docType:'connector', _id:'a'})
-    })
-  })
-
   describe('setInteractions', () => {
     test('should set docs', () => {
       const w = new Workspace(workspaceDoc())
