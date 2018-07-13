@@ -1,10 +1,10 @@
-const uuid = require('uuid/v4')
-const {watchDb, allDocs, createDb, put} = require('../../lib/database/server')
+const {watchDb, allDocs} = require('../../lib/database/server')
 const {TwitterInteraction} = require('./twitter-interaction-class')
 
 class Workspace {
   constructor(workspaceDoc) {
     this.workspaceDoc = workspaceDoc
+    this.db = {name: this.workspaceDoc.dbName}
     this.workspaceEmitter = watchDb(workspaceDoc.dbName)
     this.workspaceEmitter.on('change', this.setWorkspaceDocs)
     this.interactionsEmitter = watchDb(this.interactionsDbName)
@@ -45,16 +45,6 @@ class Workspace {
   publishInteractions() {
     const interactions = this.interactions.filter(doc => !doc.published && !this.submittedInteractions.includes(doc._id))
     interactions.forEach(i => this.submittedInteractions.push(i._id))
-  }
-
-  async buildChannels() {
-    const channels = this.channels.filter(c => !c.dbName)
-    for (let i = 0; i < channels.length; i++) {
-      const dbName = `channel-${uuid()}`
-      await createDb(dbName, 'channel')
-      channels[i].dbName = dbName
-      await put(this.workspaceDbName, channels[i])
-    }
   }
 
   get channels() {

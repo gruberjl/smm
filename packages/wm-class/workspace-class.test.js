@@ -218,47 +218,6 @@ describe('Workspace', () => {
     })
   })
 
-  describe('buildChannels', () => {
-    test('should do nothing', async () => {
-      const w = new Workspace(workspaceDoc())
-      const x = new Workspace(workspaceDoc())
-      await w.buildChannels()
-      expect(w).toEqual(x)
-    })
-
-    test('should not call createDb', async () => {
-      const w = new Workspace(workspaceDoc())
-      w.docs.push({docType:'channel', dbName:'asdf'})
-      await w.buildChannels()
-      expect(createDb.mock.calls.length).toEqual(0)
-    })
-
-    test('should not call put', async () => {
-      const w = new Workspace(workspaceDoc())
-      w.docs.push({docType:'channel', dbName:'asdf'})
-      await w.buildChannels()
-      expect(put.mock.calls.length).toEqual(0)
-    })
-
-    test('should setup db', async () => {
-      const w = new Workspace(workspaceDoc())
-      w.docs.push({docType:'channel'})
-      await w.buildChannels()
-      expect(createDb.mock.calls.length).toEqual(1)
-      expect(createDb.mock.calls[0].length).toEqual(2)
-      expect(createDb.mock.calls[0][1]).toEqual('channel')
-    })
-
-    test('should update channel doc', async () => {
-      const w = new Workspace(workspaceDoc())
-      w.docs.push({docType:'channel'})
-      await w.buildChannels()
-      expect(put.mock.calls.length).toEqual(1)
-      expect(put.mock.calls[0].length).toEqual(2)
-      expect(put.mock.calls[0][0]).toEqual(w.workspaceDbName)
-    })
-  })
-
   describe('close', () => {
     test('should have close function', () => {
       const w = new Workspace(workspaceDoc())
