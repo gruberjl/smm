@@ -4,4 +4,4 @@ app.listen(3000, function(){
 })
 
 require('./lib/social')
-require('./lib/workspace-manager')
+// require('./lib/workspace-manager')
