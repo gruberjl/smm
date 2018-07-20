@@ -1,6 +1,6 @@
 const React = require('react')
 const {connect} = require('react-redux')
-const {put} = require('../../lib/database')
+const {save} = require('../../lib/database')
 const {WorkflowEditCard} = require('./edit-card.js')
 const {WorkflowEditConnectorCard} = require('./edit-connector-card.js')
 const {WorkflowEditFiltersCard} = require('./edit-filters-card.js')
@@ -22,14 +22,14 @@ class Component extends React.Component {
   }
 
   saveWorkflow() {
-    put('workspace1', this.state.workflow).then(res => {
+    save(this.state.workflow).then(res => {
       console.log(res)
     })
   }
 
   deleteWorkflow() {
     const workflow = Object.assign({}, this.state.workflow, {_deleted: true})
-    put('workspace1', workflow).then(res => {
+    save(workflow).then(res => {
       console.log(res)
       this.props.history.push('/workflows')
     })
