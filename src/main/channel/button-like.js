@@ -1,6 +1,6 @@
 const React = require('react')
 const {connect} = require('react-redux')
-const {put} = require('../../lib/database')
+const {save} = require('../../lib/database')
 const templates = require('../../lib/templates')
 
 class Component extends React.Component {
@@ -13,7 +13,9 @@ class Component extends React.Component {
       connector: {_id: this.props.connectors[0]._id}
     })
 
-    put('interactions1', interaction)
+    save(interaction).then(res => {
+      console.log(res)
+    })
   }
 
   render() {
