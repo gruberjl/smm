@@ -10,8 +10,8 @@ const updateChannels = (workspaceDocs, msgChannels) => {
 const newInteraction = (channels, interaction) => {
   Object.values(channels).forEach(channel => {
     const msg = channel.find(msg => msg._id == interaction.messageId)
-    if (msg) {
-      if (interaction.docType == 'like') msg.likes.push(interaction)
+    if (msg && interaction.docType == 'like') {
+      msg.liked.push(interaction)
     }
   })
 }
