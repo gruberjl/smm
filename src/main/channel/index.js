@@ -14,7 +14,8 @@ const Component = ({docs}) => (
 const mapStateToProps = (state, props) => {
   const params = props.match.params
   const channel = state.workspace.channels.find((channel) => channel._id == params._id)
-  const docs = state.channel[channel.dbName].docs
+  const docs = state.messages.channels[channel.dbName]
+  console.log(docs)
   return {docs}
 }
 

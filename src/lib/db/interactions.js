@@ -7,6 +7,11 @@ const start = (store) => {
     const action = {type:'INTERACTIONS_CHANGE', docs}
     store.dispatch(action)
   })
+
+  emitter.on('diff', docs => {
+    const action = {type:'INTERACTIONS_DIFF', docs}
+    store.dispatch(action)
+  })
 }
 
 module.exports = {start}

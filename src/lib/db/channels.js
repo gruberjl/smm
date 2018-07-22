@@ -11,6 +11,11 @@ const startChannel = (store, channel) => {
       store.dispatch(action)
     })
 
+    emitter.on('diff', docs => {
+      const action = {type:'CHANNEL_DIFF', docs, channel}
+      store.dispatch(action)
+    })
+
     activeChannels.set(channel._id, {channel, emitter})
   }
 }
