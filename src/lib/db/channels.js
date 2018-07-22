@@ -1,15 +1,10 @@
-const {watchDb} = require('../database')
+const {watchDocs} = require('../database')
 const workspace = require('./workspace')
 const activeChannels = new Map()
 
 const startChannel = (store, channel) => {
   if (channel.dbName && !activeChannels.has(channel._id)) {
-    const emitter = watchDb(channel.dbName)
-
-    emitter.on('change', docs => {
-      const action = {type:'CHANNEL_CHANGE', docs, channel}
-      store.dispatch(action)
-    })
+    const emitter = watchDocs(channel.dbName)
 
     emitter.on('diff', docs => {
       const action = {type:'CHANNEL_DIFF', docs, channel}
