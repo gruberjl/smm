@@ -4,7 +4,7 @@ const {save} = require('../../lib/database')
 const templates = require('../../lib/templates')
 
 class Component extends React.Component {
-  toggleLike() {
+  likeMessage() {
     const interaction = Object.assign(templates.interactions(), {
       provider: 'twitter',
       providerId: this.props.providerId,
@@ -16,6 +16,21 @@ class Component extends React.Component {
     save(interaction).then(res => {
       console.log(res)
     })
+  }
+
+  unlikeMessage() {
+    const interaction = this.props.liked[0]
+    interaction._deleted = true
+    save(interaction).then(res => {
+      console.log(res)
+    })
+  }
+
+  toggleLike() {
+    if (this.props.liked.length==0)
+      this.likeMessage()
+    else
+      this.unlikeMessage()
   }
 
   render() {
